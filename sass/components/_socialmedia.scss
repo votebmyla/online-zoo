@@ -1,0 +1,31 @@
+.socials-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 180px;
+}
+
+.socials-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.socials-link {
+  position: relative;
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    left: 0px;
+    bottom: 4px;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0;
+    transition: $transition;
+  }
+  &:hover::after {
+    opacity: 0.2;
+  }
+}

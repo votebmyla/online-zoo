@@ -1,0 +1,74 @@
+.quick-donate {
+  background-color: $color-secondary;
+  padding: 50px 0;
+}
+
+.quick-donate__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.quick-donate__heading {
+  color: $color-bright;
+  max-width: 889px;
+  margin-bottom: 20px;
+}
+
+.quick-donate__subheading {
+  color: $color-bright;
+  max-width: 609px;
+}
+
+.quick-donate__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.quick-donate__input-label {
+  font-family: $font-primary;
+  font-size: 2.6rem;
+  font-weight: 500;
+  line-height: 130%;
+  text-transform: capitalize;
+  color: $color-bright;
+  margin-bottom: 10px;
+}
+
+.quick-donate__input-container {
+  border: 1px solid $color-bright;
+  border-radius: 5px;
+  width: 322px;
+  height: 76px;
+}
+
+.quick-donate__input-wrapper {
+  display: flex;
+  flex-direction: row;
+  //justify-content: center;
+  align-items: center;
+  padding-left: 14px;
+}
+
+.quick-donate__input-presymbol,
+.quick-donate__input {
+  font-family: $font-primary;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+  text-transform: uppercase;
+  color: $color-bright;
+}
+
+.quick-donate__input {
+  background-color: $color-secondary;
+  margin: 0 5px;
+  width: 205px;
+  &::placeholder {
+    color: $color-bright;
+    opacity: 1;
+    transition: $transition;
+  }
+  &:focus::placeholder {
+    opacity: 0;
+  }
+}

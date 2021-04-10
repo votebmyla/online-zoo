@@ -1,0 +1,9 @@
+.ico {
+  transition: $transition;
+  &_bright {
+    fill: $color-bright;
+  }
+  &_secondary {
+    fill: $color-secondary;
+  }
+}

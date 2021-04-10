@@ -1,0 +1,28 @@
+.welcome__wrapper {
+  padding: 75px 0;
+}
+
+.welcome-content__wrapper {
+  padding: 75px 0;
+}
+
+.welcome-content {
+  display: flex;
+  justify-content: space-between;
+  height: 531px;
+}
+
+.welcome-content__description {
+  width: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.welcome-content__heading {
+  margin-bottom: 50px;
+}
+
+.welcome-content__img {
+  border-radius: 5px;
+}

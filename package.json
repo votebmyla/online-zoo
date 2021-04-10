@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/votebmyla/online-zoo/issues"
   },
-  "homepage": "https://github.com/votebmyla/online-zoo#readme"
+  "homepage": "https://github.com/votebmyla/online-zoo#readme",
+  "dependencies": {
+    "normalize": "^0.3.1"
+  }
 }

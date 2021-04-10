@@ -1,0 +1,57 @@
+// buttons
+
+.button {
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  transition: $transition;
+  &:hover {
+    cursor: pointer;
+  }
+  &_primary {
+    background-color: $color-primary;
+    color: $color-bright;
+    transition: $transition;
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      background-color: $color-primary-darker;
+      box-shadow: 0px 4px 30px rgba(245, 130, 36, 0.3);
+    }
+  }
+  &_size240x74 {
+    width: 240px;
+    height: 74px;
+  }
+  &_size80x74 {
+    width: 80px;
+    height: 74px;
+  }
+}
+
+.button-label {
+  font-family: $font-primary;
+  font-style: normal;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.button-space {
+  width: 10px;
+  height: 1px;
+}
+
+.button-arrow {
+  width: 25px;
+  height: 22px;
+  transition: $transition;
+  &_bright {
+    fill: $color-bright;
+  }
+}

@@ -1,0 +1,23 @@
+.watch__bg {
+  height: 790px;
+  background-image: url(../../assets/images/top-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+}
+
+.watch__content {
+  padding: 130px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 790px;
+}
+
+.watch__heading {
+  width: 890px;
+}
+
+.watch__subheading {
+  width: 430px;
+}

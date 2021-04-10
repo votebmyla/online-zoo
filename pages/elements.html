@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../assets/normalize/normalize.min.css">
+  <link rel="stylesheet" href="../style/style.css">
+
+  <title>Elements test</title>
+</head>
+<style>
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+</style>
+
+<body>
+
+
+  <div class="wrapper" style="padding-top: 30px; background: lightgrey; height: auto; max-width: 1400px;">
+
+    <div class="tag tag_selected">
+      <img class="tag-stroked" src="../assets/icons/tag-stroked.png" alt="">
+      <svg class="tag-animal-icon eagle-icon">
+        <use href="../../assets/icons/animals-sprite.svg#eagle-icon"></use>
+      </svg>
+    </div>
+
+    <div class="tag">
+      <img class="tag-stroked" src="../assets/icons/tag-primary.png" alt="">
+      <svg class="tag-animal-icon eagle-icon">
+        <use href="../../assets/icons/animals-sprite.svg#eagle-icon"></use>
+      </svg>
+    </div>
+
+  </div>
+
+
+  <div class="wrapper" style="padding-top: 30px; background: lightgrey; height: auto; max-width: 1400px;">
+
+    <aside class="zoo-sidebar zoo-sidebar_opened">
+
+      <div class="zoo-sidebar__top">
+        <div class="zoo-sidebar__bage live-bage live-bage_primary">
+          <span class="bage-label live-bage__label live-bage__label_bright">live </span>
+          <span class="bage-space live-bage__space"></span>
+          <svg class="bage-icon live-bage__icon live-bage__icon_bright">
+            <use href="../../assets/icons/sprite.svg#cam-icon"></use>
+          </svg>
+        </div>
+        <svg class="zoo-sidebar__arrow zoo-sidebar__arrow_bright zoo-sidebar__arrow_reversed">
+          <use href="../../assets/icons/sprite.svg#sidebar-arrow"></use>
+        </svg>
+      </div>
+
+      <div class="zoo-sidebar__animals zoo-sidebar__animals_selected">
+        <div class="zoo-sidebar__icon-wrapper">
+          <svg class="zoo-sidebar__animal-icon panda-icon">
+            <use href="../../assets/icons/animals-sprite.svg#panda-icon"></use>
+          </svg>
+        </div>
+        <p class="zoo-sidebar__title">Watch live from China's Panda Center </p>
+      </div>
+
+      <div class="zoo-sidebar__animals">
+        <div class="zoo-sidebar__icon-wrapper">
+          <svg class="zoo-sidebar__animal-icon eagle-icon">
+            <use href="../../assets/icons/animals-sprite.svg#eagle-icon"></use>
+          </svg>
+        </div>
+        <p class="zoo-sidebar__title">Watch The Bald Eagles Nest from West End cam </p>
+      </div>
+
+      <div class="zoo-sidebar__animals">
+        <div class="zoo-sidebar__icon-wrapper">
+          <svg class="zoo-sidebar__animal-icon gorilla-icon">
+            <use href="../../assets/icons/animals-sprite.svg#gorilla-icon"></use>
+          </svg>
+        </div>
+        <p class="zoo-sidebar__title">Livestream from Gorilla Forest Corridor habitat cam</p>
+      </div>
+
+      <div class="zoo-sidebar__animals">
+        <div class="zoo-sidebar__icon-wrapper">
+          <svg class="zoo-sidebar__animal-icon lemur-icon">
+            <use href="../../assets/icons/animals-sprite.svg#lemur-icon"></use>
+          </svg>
+        </div>
+        <p class="zoo-sidebar__title">The ring-tailed lemurs play in Madagascar, Lemuria Land </p>
+      </div>
+
+      <div class="zoo-sidebar__bottom">
+        <svg class="zoo-sidebar__bottom-arrow down-arrow-icon">
+          <use href="../../assets/icons/sprite.svg#down-arrow"></use>
+        </svg>
+      </div>
+
+    </aside>
+
+
+    <aside class="zoo-sidebar zoo-sidebar_closed">
+
+      <div class="zoo-sidebar__top">
+        <div class="zoo-sidebar__bage live-bage live-bage_primary">
+          <span class="bage-label live-bage__label live-bage__label_bright">live </span>
+          <span class="bage-space live-bage__space"></span>
+          <svg class="bage-icon live-bage__icon live-bage__icon_bright">
+            <use href="../../assets/icons/sprite.svg#cam-icon"></use>
+          </svg>
+        </div>
+        <svg class="zoo-sidebar__arrow zoo-sidebar__arrow_bright">
+          <use href="../../assets/icons/sprite.svg#sidebar-arrow"></use>
+        </svg>
+      </div>
+
+      <div class="zoo-sidebar__animals zoo-sidebar__animals_selected">
+        <div class="zoo-sidebar__icon-wrapper">
+          <img class="zoo-sidebar__animal-icon-bg circle-stroked" src="../assets/icons/circle-stroked.png">
+          <svg class="zoo-sidebar__animal-icon zoo-sidebar__animal-icon_closed panda-icon">
+            <use href="../../assets/icons/animals-sprite.svg#panda-icon"></use>
+          </svg>
+        </div>
+        <p class="zoo-sidebar__title">Watch live from China's Panda Center </p>
+      </div>
+
+      <div class="zoo-sidebar__animals">
+        <div class="zoo-sidebar__icon-wrapper">
+          <img class="zoo-sidebar__animal-icon-bg circle" src="../assets/icons/circle.png">
+          <svg class="zoo-sidebar__animal-icon eagle-icon">
+            <use href="../../assets/icons/animals-sprite.svg#eagle-icon"></use>
+          </svg>
+        </div>
+        <p class="zoo-sidebar__title">Watch The Bald Eagles Nest from West End cam </p>
+      </div>
+
+      <div class="zoo-sidebar__animals">
+        <div class="zoo-sidebar__icon-wrapper">
+          <img class="zoo-sidebar__animal-icon-bg circle" src="../assets/icons/circle.png">
+          <svg class="zoo-sidebar__animal-icon gorilla-icon">
+            <use href="../../assets/icons/animals-sprite.svg#gorilla-icon"></use>
+          </svg>
+        </div>
+        <p class="zoo-sidebar__title">Livestream from Gorilla Forest Corridor habitat cam</p>
+      </div>
+
+      <div class="zoo-sidebar__animals">
+        <div class="zoo-sidebar__icon-wrapper">
+          <img class="zoo-sidebar__animal-icon-bg circle" src="../assets/icons/circle.png">
+          <svg class="zoo-sidebar__animal-icon lemur-icon">
+            <use href="../../assets/icons/animals-sprite.svg#lemur-icon"></use>
+          </svg>
+        </div>
+        <p class="zoo-sidebar__title">The ring-tailed lemurs play in Madagascar, Lemuria Land </p>
+      </div>
+
+      <div class="zoo-sidebar__bottom">
+        <svg class="zoo-sidebar__bottom-arrow down-arrow-icon">
+          <use href="../../assets/icons/sprite.svg#down-arrow"></use>
+        </svg>
+      </div>
+
+    </aside>
+
+  </div>
+
+  <div class="wrapper" style="padding-top: 30px; background: lightgrey; height: auto; max-width: 1400px;">
+
+    <div class="cards cards-feed">
+
+      <figure class="card-main-pic">
+        <img src="../assets/images/feed-card-img.jpg" alt="card main image" class="card-main-img">
+      </figure>
+
+      <div class="card-wrapper card-wrapper-feed">
+        <a class="card-link" href="#">
+          <div class="card card-feed">
+            <figure class="card-top">
+              <img src="../assets/images/feed-card-1.jpg" alt="panda" class="card-img card-img-feed">
+            </figure>
+            <div class="card-bottom card-bottom-feed">
+              <div class="card-subtitle card-subtitle-feed">
+                <p class="card-text">
+                  Your $30 could give Lucas <br> a slice of panda cake, made with our secret recipe.
+                </p>
+              </div>
+              <div class="card-button">
+                <button class="button button__transparent button_size-2618">
+                  <span class="button-label">feed</span>
+                  <span class="button-space"></span>
+                  <svg class="button-arrow button-arrow_primary">
+                    <use href="../assets/icons/sprite.svg#button-arrow"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="card-wrapper card-wrapper-feed">
+        <a class="card-link" href="#">
+          <div class="card card-feed">
+            <figure class="card-top">
+              <img src="../assets/images/feed-card-1.jpg" alt="panda" class="card-img card-img-feed">
+            </figure>
+            <div class="card-bottom card-bottom-feed">
+              <div class="card-subtitle card-subtitle-feed">
+                <p class="card-text">
+                  Your $30 could give Lucas <br> a slice of panda cake, made with our secret recipe.
+                </p>
+              </div>
+              <div class="card-button">
+                <button class="button button__transparent button_size-2618">
+                  <span class="button-label">feed</span>
+                  <span class="button-space"></span>
+                  <svg class="button-arrow button-arrow_primary">
+                    <use href="../assets/icons/sprite.svg#button-arrow"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="card-wrapper card-wrapper-feed">
+        <a class="card-link" href="#">
+          <div class="card card-feed">
+            <figure class="card-top">
+              <img src="../assets/images/feed-card-1.jpg" alt="panda" class="card-img card-img-feed">
+            </figure>
+            <div class="card-bottom card-bottom-feed">
+              <div class="card-subtitle card-subtitle-feed">
+                <p class="card-text">
+                  Your $30 could give Lucas <br> a slice of panda cake, made with our secret recipe.
+                </p>
+              </div>
+              <div class="card-button">
+                <button class="button button__transparent button_size-2618">
+                  <span class="button-label">feed</span>
+                  <span class="button-space"></span>
+                  <svg class="button-arrow button-arrow_primary">
+                    <use href="../assets/icons/sprite.svg#button-arrow"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="card-wrapper card-wrapper-feed">
+        <a class="card-link" href="#">
+          <div class="card card-feed">
+            <figure class="card-top">
+              <img src="../assets/images/feed-card-1.jpg" alt="panda" class="card-img card-img-feed">
+            </figure>
+            <div class="card-bottom card-bottom-feed">
+              <div class="card-subtitle card-subtitle-feed">
+                <p class="card-text">
+                  Your $30 could give Lucas <br> a slice of panda cake, made with our secret recipe.
+                </p>
+              </div>
+              <div class="card-button">
+                <button class="button button__transparent button_size-2618">
+                  <span class="button-label">feed</span>
+                  <span class="button-space"></span>
+                  <svg class="button-arrow button-arrow_primary">
+                    <use href="../assets/icons/sprite.svg#button-arrow"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="wrapper" style="padding: 30px; background: lightgrey; height: auto; max-width: 1400px;">
+
+    <div class="section-wrapper">
+
+      <h2 class="heading heading__h2">PAY AND FEED</h2>
+      <div class="item-container">
+        <div class="item-divider">
+          <div class="item-count">01</div>
+          <div class="item-hr">
+            <hr class="item-line">
+          </div>
+        </div>
+        <div class="item-description layout-2-column">
+          <figure class="item-pic">
+            <img class="item-img" src="../assets/images/pay-feed-1.jpg" alt="item image">
+          </figure>
+          <div class="item-details">
+            <div class="item-ico">
+              <svg class="item-icon">
+                <use href="../assets/icons/sprite.svg#pay-feed-1"></use>
+              </svg>
+            </div>
+            <p class="item-title">
+              Your donation has an impact
+            </p>
+            <p class="item-text">Providing our animals with high-quality nutritious diets is just one element of
+              animal care at our Zoo. We do all the best so that our animals can eat food similar to what they might
+              find in their natural habitats while making sure they get the right mix of nutrients, proteins, and
+              vitamins to be happy and healthy. Please help us provide nutritious food for our animals by donating.
+              The generosity of people like you can help us make sure that our animals enjoy good food that keeps them
+              in great condition.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+  <div class="wrapper" style="padding: 30px; background: lightgrey; height: auto; max-width: 1400px;">
+
+    <div class="cards">
+
+      <div class="card-wrapper">
+        <div class="card-gradient"></div>
+        <a class="card-link" href="#">
+          <div class="card">
+            <div class="card-bage">Lucas</div>
+            <figure class="card-top">
+              <img src="../assets/images/lucas.jpg" alt="panda" class="card-img">
+              <figcaption class="card-caption">Lucas</figcaption>
+            </figure>
+            <div class="card-bottom">
+              <div class="card-subtitle">
+                <p class="card-text">
+                  Native to central China, giant pandas have come to symbolize vulnerable species.
+                </p>
+              </div>
+              <div class="card-button">
+                <button class="button button__transparent button_size-2618">
+                  <span class="button-label">view live cam</span>
+                  <span class="button-space"></span>
+                  <svg class="button-arrow button-arrow_primary">
+                    <use href="../assets/icons/sprite.svg#button-arrow"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="card-wrapper">
+        <div class="card-gradient"></div>
+        <a class="card-link" href="#">
+          <div class="card">
+            <div class="card-bage">Andy</div>
+            <figure class="card-top">
+              <img src="../assets/images/andy.jpg" alt="panda" class="card-img">
+              <figcaption class="card-caption">Lucas</figcaption>
+            </figure>
+            <div class="card-bottom">
+              <div class="card-subtitle">
+                <p class="card-text">
+                  Native to central China, giant pandas have come to symbolize vulnerable species.
+                </p>
+              </div>
+              <div class="card-button">
+                <button class="button button__transparent button_size-2618">
+                  <span class="button-label">view live cam</span>
+                  <span class="button-space"></span>
+                  <svg class="button-arrow button-arrow_primary">
+                    <use href="../assets/icons/sprite.svg#button-arrow"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="card-wrapper">
+        <div class="card-gradient"></div>
+        <a class="card-link" href="#">
+          <div class="card">
+            <div class="card-bage">Shake</div>
+            <figure class="card-top">
+              <img src="../assets/images/shake.jpg" alt="panda" class="card-img">
+              <figcaption class="card-caption">Lucas</figcaption>
+            </figure>
+            <div class="card-bottom">
+              <div class="card-subtitle">
+                <p class="card-text">
+                  Native to central China, giant pandas have come to symbolize vulnerable species.
+                </p>
+              </div>
+              <div class="card-button">
+                <button class="button button__transparent button_size-2618">
+                  <span class="button-label">view live cam</span>
+                  <span class="button-space"></span>
+                  <svg class="button-arrow button-arrow_primary">
+                    <use href="../assets/icons/sprite.svg#button-arrow"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="wrapper" style="padding: 30px; background: lightgrey; height: 800px; max-width: 1400px;">
+
+    <button class="button button__primary button_size-2634">
+      <span class="button-label">donate now</span>
+      <span class="button-space"></span>
+      <svg class="button-arrow button-arrow_bright">
+        <use href="../assets/icons/sprite.svg#button-arrow"></use>
+      </svg>
+    </button>
+
+    <button class="button button__alternative button_size-2688">
+      <span class="button-label">send message</span>
+      <span class="button-space"></span>
+      <svg class="button-arrow button-arrow_bright">
+        <use href="../assets/icons/sprite.svg#button-arrow"></use>
+      </svg>
+    </button>
+
+    <button class="button button__transparent-secondary button_bordered-secondary button_size-2635">
+      <span class="button-label">choose your favourite</span>
+      <span class="button-space"></span>
+      <svg class="button-arrow button-arrow_secondary">
+        <use href="../assets/icons/sprite.svg#button-arrow"></use>
+      </svg>
+    </button>
+
+    <button class="button button__transparent-bright button_bordered-bright button_size-2677">
+      <span class="button-label">leave feedback</span>
+      <span class="button-space"></span>
+      <svg class="button-arrow button-arrow_bright">
+        <use href="../assets/icons/sprite.svg#button-arrow"></use>
+      </svg>
+    </button>
+
+    <button class="button button_size-2618">
+      <span class="button-label">VIEW LIVE CAM</span>
+      <span class="button-space"></span>
+      <svg class="button-arrow button-arrow_primary">
+        <use href="../assets/icons/sprite.svg#button-arrow"></use>
+      </svg>
+    </button>
+
+    <button class="button button__primary button_size-2627">
+      <svg class="button-arrow button-arrow_bright">
+        <use href="../assets/icons/sprite.svg#button-arrow"></use>
+      </svg>
+    </button>
+
+    <button class="button button_squared-bright button_size-1920 button_bordered-bright">
+      <svg class="button-arrow button-arrow_bright button-arrow_reversed">
+        <use href="../assets/icons/sprite.svg#button-arrow"></use>
+      </svg>
+    </button>
+
+
+    <button class="button button_squared-bright button_size-1920 button_bordered-bright">
+      <svg class="button-arrow button-arrow_bright">
+        <use href="../assets/icons/sprite.svg#button-arrow"></use>
+      </svg>
+    </button>
+
+    <button class="button button_squared-secondary button_size-1920 button_bordered-secondary">
+      <svg class="button-arrow button-arrow_secondary button-arrow_reversed">
+        <use href="../assets/icons/sprite.svg#button-arrow"></use>
+      </svg>
+    </button>
+
+    <button class="button button_squared-secondary button_size-1920 button_bordered-secondary">
+      <svg class="button-arrow button-arrow_secondary">
+        <use href="../assets/icons/sprite.svg#button-arrow"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="wrapper" style="padding: 30px; background: lightgrey; height: 800px; max-width: 1400px;">
+
+    <div class="quick-donate-form-container">
+      <form class="quick-donate-form" action="#">
+        <label class="quick-donate-form-pretitle" for="quick-donate-input">Quick Donate </label>
+        <div class="quick-donate-input-wrapper">
+          <span class="quick-donate-presymbol">$</span>
+          <input class="quick-donate-input" id="quick-donate-input" type="number">
+          <button class="button button__primary button_size-2627">
+            <svg class="button-arrow button-arrow_bright">
+              <use href="../assets/icons/sprite.svg#button-arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div class="tag-container">
+      <svg class="tag-icon">
+        <use href="../assets/icons/sprite.svg#tag"></use>
+      </svg>
+      <svg class="animal-icon tiger-icon">
+        <use href="../assets/icons/animals-sprite.svg#tiger-icon"></use>
+      </svg>
+    </div>
+
+    <div class="tag-container">
+      <svg class="tag-icon">
+        <use href="../assets/icons/sprite.svg#tag-stroked"></use>
+      </svg>
+      <svg class="animal-icon tiger-icon">
+        <use href="../assets/icons/animals-sprite.svg#tiger-icon"></use>
+      </svg>
+    </div>
+
+  </div>
+</body>
+
+</html>

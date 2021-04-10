@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/icons/favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/normalize/normalize.min.css">
+  <link rel="stylesheet" href="./style/style.css">
+  <title>Online Zoo</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="wrapper header__wrapper">
+      <div class="logo">
+        <a href="./index.html">
+          <img src="./assets/icons/logo.svg" alt="website logo">
+        </a>
+      </div>
+      <h1 class="visually-hidden">Online Zoo</h1> <!-- SEO -->
+      <a href="./pages/elements.html" class="elemnts">elements</a>
+      <div class="nav-socials">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link nav-link_current" href="./index.html">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/map.html">map</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/zoos/zoos-pandas.html">zoos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contact-us.html">contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.figma.com/file/lnK11foY8Aoa6oOlDXovVN/Online-ZOO-Project">design</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="socials">
+          <ul class="socials-list">
+            <li class="socials-item">
+              <a class="socials-link" href="http://youtube.com">
+                <img class="socials-icon" src="./assets/icons/youtube.svg" alt="youtube link">
+              </a>
+            </li>
+            <li class="socials-item">
+              <a class="socials-link" href="http://instagram.com">
+                <img class="socials-icon" src="./assets/icons/instagram.svg" alt="instagram link">
+              </a>
+            </li>
+            <li class="socials-item">
+              <a class="socials-link" href="http://facebook.com">
+                <img class="socials-icon" src="./assets/icons/facebook.svg" alt="facebook link">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="watch watch__bg">
+    <div class="wrapper watch__wrapper">
+      <div class="watch__content">
+        <h1 class="watch__heading heading heading_h1 heading_alternative-color">Watch your favorite animal online</h1>
+        <p class="watch__subheading subheading">Explore the exciting and mysterious world of wild animals in a natural
+          setting without
+          leaving your home.</p>
+        <button class="button button_primary button_size240x74">
+          <span class="button-label">view live cam</span>
+          <span class="button-space"></span>
+          <svg class="button-arrow button-arrow_bright">
+            <use href="./assets/icons/sprite.svg#arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="welcome">
+    <div class="wrapper welcome__wrapper">
+      <div class="welcome-content__wrapper">
+        <div class="welcome-content">
+          <div class="welcome-content__description">
+            <h2 class="welcome-content__heading heading heading_h2 heading_alternative-color">Welcome to the Online Zoo!
+            </h2>
+            <p class="welcome-content__subheading subheading">On our website, using live webcams, fans of all ages can
+              observe
+              various animals. Among them, are Giant pandas, eagles, alligators, forest gorillas, African lions, and
+              others. It is the whole natural world in real-time in front of our cameras. We hope you will enjoy
+              watching
+              closely and explore animals’ behavior and habitats! Note: animals are not always on view on cameras, so
+              please check back if you don't see anything.</p>
+          </div>
+          <picture class="welcome-content__pic">
+            <source class="welcome-content__img" srcset="./assets/images/welcome-img-1.webp" type="image/webp">
+            <img class="welcome-content__img" src="./assets/images/welcome-img-1.jpg" alt="welcome block image">
+          </picture>
+        </div>
+      </div>
+      <div class="welcome-content__wrapper">
+        <div class="welcome-content">
+          <picture class="welcome-content__pic">
+            <source class="welcome-content__img" srcset="./assets/images/welcome-img-2.webp" type="image/webp">
+            <img class="welcome-content__img" src="./assets/images/welcome-img-2.jpg" alt="your donation block image">
+          </picture>
+          <div class="welcome-content__description">
+            <h2 class="welcome-content__heading heading heading_h2 heading_alternative-color">How we work</h2>
+            <p class="welcome-content__subheading subheading">Online Zoo is a nonprofit committed to inspiring awareness
+              and
+              preservation of nature and wild animals in our zoo and worldwide. Every day, our experts work to safeguard
+              the health and wellness of the animals. To continue these efforts, we need your help. We're so grateful to
+              our numerous supporters. All donations, large and small, go a long way to the conservation efforts of our
+              pets.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quick-donate">
+    <div class="wrapper quick-donate__wrapper">
+      <div class="quick-donate__title">
+        <h3 class="quick-donate__heading heading heading_h3">Your donation makes a difference! </h3>
+        <p class="quick-donate__subheading subheading">The Online Zoo's animal webcams are some of the most famous on
+          the internet. Tune in to
+          watch your favourite animals — live, 24/7!</p>
+      </div>
+      <form class="quick-donate__form" action="#">
+        <label class="quick-donate__input-label" for="quick-donate-input">quick donate</label>
+        <div class="quick-donate__input-container">
+          <div class="quick-donate__input-wrapper">
+            <span class="quick-donate__input-presymbol">$</span>
+            <input class="quick-donate__input" id="quick-donate-input" type="number" placeholder="donation amount">
+            <button class="button button_primary button_size80x74">
+              <svg class="button-arrow button-arrow_bright">
+                <use href="./assets/icons/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</body>
+
+</html>

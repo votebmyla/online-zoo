@@ -1,0 +1,10 @@
+.header {
+  background-color: $color-primary;
+}
+
+.header__wrapper {
+  height: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
