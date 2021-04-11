@@ -1,16 +1,16 @@
-.socials-list {
+.socials__list {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 180px;
 }
 
-.socials-icon {
+.socials__icon {
   width: 40px;
   height: 40px;
 }
 
-.socials-link {
+.socials__link {
   position: relative;
   &::after {
     content: "";

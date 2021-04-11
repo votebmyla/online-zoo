@@ -1,0 +1,38 @@
+.care-card-bg__img {
+  width: 920px;
+  height: 658px;
+  border-radius: 5px;
+}
+
+.care-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 440px;
+  height: 658px;
+  background-color: $color-secondary;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.care-card__img {
+  border-radius: 5px 5px 0 0;
+}
+
+.care-card__text {
+  font-family: $font-primary;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: $color-bright;
+  text-align: center;
+  width: 390px;
+  max-height: 120px;
+  margin-top: 30px;
+}
+
+.care-card__button {
+  position: absolute;
+  bottom: 50px;
+}

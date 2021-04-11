@@ -22,13 +22,49 @@
       box-shadow: 0px 4px 30px rgba(245, 130, 36, 0.3);
     }
   }
+  &_transparent {
+    background-color: transparent;
+    color: $color-primary;
+    &:hover {
+      background-color: $color-primary;
+      color: $color-bright;
+    }
+  }
+  &_transparent-bordered-secondary {
+    background-color: transparent;
+    border: 1px solid $color-secondary;
+    &:hover {
+      background-color: $color-secondary;
+      color: $color-bright;
+    }
+  }
+  &_transparent-bordered-bright {
+    background-color: transparent;
+    border: 1px solid $color-bright;
+    color: $color-bright;
+    &:hover {
+      background-color: $color-alternative;
+    }
+  }
+  &_size359x74 {
+    width: 359px;
+    height: 74px;
+  }
   &_size240x74 {
     width: 240px;
+    height: 74px;
+  }
+  &_size142x74 {
+    width: 142px;
     height: 74px;
   }
   &_size80x74 {
     width: 80px;
     height: 74px;
+  }
+  &_size60x60 {
+    width: 60px;
+    height: 60px;
   }
 }
 
@@ -51,7 +87,36 @@
   width: 25px;
   height: 22px;
   transition: $transition;
+  &_reversed {
+    transform: rotate(180deg);
+  }
   &_bright {
     fill: $color-bright;
   }
+  &_primary {
+    fill: $color-primary;
+  }
+  &_secondary {
+    fill: $color-secondary;
+  }
+}
+
+.button_transparent:hover .button-arrow_primary {
+  fill: $color-bright;
+}
+
+.button_transparent-bordered-secondary:hover .button-arrow_secondary {
+  fill: $color-bright;
+}
+
+.button_size60x60:hover .button-arrow_bright {
+  fill: $color-secondary;
+}
+
+.button_transparent-bordered-bright.button_size60x60:hover {
+  background-color: $color-bright;
+}
+
+.button_transparent-bordered-secondary.button_size60x60:hover {
+  background-color: $color-secondary;
 }

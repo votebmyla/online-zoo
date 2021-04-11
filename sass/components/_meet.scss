@@ -1,0 +1,31 @@
+.meet {
+  overflow: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.meet__wrapper {
+  padding: 136px 0 150px;
+}
+
+.meet__heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.meet__subheading {
+  max-width: 920px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 2.6rem;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+.meet-slider {
+  margin-bottom: 100px;
+}
+
+.meet-button {
+  display: flex;
+  justify-content: center;
+}

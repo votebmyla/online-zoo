@@ -24,42 +24,42 @@
         </a>
       </div>
       <h1 class="visually-hidden">Online Zoo</h1> <!-- SEO -->
-      <a href="./pages/elements.html" class="elemnts">elements</a>
       <div class="nav-socials">
-        <nav class="nav">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a class="nav-link nav-link_current" href="./index.html">about</a>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link_current" href="./index.html">about</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/map.html">map</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="./pages/map.html">map</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/zoos/zoos-pandas.html">zoos</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="./pages/zoos/zoos-pandas.html">zoos</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/contact-us.html">contact us</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="./pages/contact-us.html">contact us</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.figma.com/file/lnK11foY8Aoa6oOlDXovVN/Online-ZOO-Project">design</a>
+            <li class="navigation__item">
+              <a class="navigation__link"
+                href="https://www.figma.com/file/lnK11foY8Aoa6oOlDXovVN/Online-ZOO-Project">design</a>
             </li>
           </ul>
         </nav>
         <div class="socials">
-          <ul class="socials-list">
-            <li class="socials-item">
-              <a class="socials-link" href="http://youtube.com">
-                <img class="socials-icon" src="./assets/icons/youtube.svg" alt="youtube link">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link" href="http://youtube.com">
+                <img class="socials__icon" src="./assets/icons/youtube.svg" alt="youtube link">
               </a>
             </li>
-            <li class="socials-item">
-              <a class="socials-link" href="http://instagram.com">
-                <img class="socials-icon" src="./assets/icons/instagram.svg" alt="instagram link">
+            <li class="socials__item">
+              <a class="socials__link" href="http://instagram.com">
+                <img class="socials__icon" src="./assets/icons/instagram.svg" alt="instagram link">
               </a>
             </li>
-            <li class="socials-item">
-              <a class="socials-link" href="http://facebook.com">
-                <img class="socials-icon" src="./assets/icons/facebook.svg" alt="facebook link">
+            <li class="socials__item">
+              <a class="socials__link" href="http://facebook.com">
+                <img class="socials__icon" src="./assets/icons/facebook.svg" alt="facebook link">
               </a>
             </li>
           </ul>
@@ -74,7 +74,8 @@
         <h1 class="watch__heading heading heading_h1 heading_alternative-color">Watch your favorite animal online</h1>
         <p class="watch__subheading subheading">Explore the exciting and mysterious world of wild animals in a natural
           setting without
-          leaving your home.</p>
+          leaving your home.
+        </p>
         <button class="button button_primary button_size240x74">
           <span class="button-label">view live cam</span>
           <span class="button-space"></span>
@@ -151,6 +152,546 @@
       </form>
     </div>
   </section>
+
+  <section class="meet">
+    <div class="wrapper meet__wrapper">
+      <h2 class="meet__heading heading heading_h2 heading_alternative-color">meet some our Pets </h2>
+      <p class="meet__subheading subheading">Do you have a special place in your heart for animals? Who are your
+        favorites? Perhaps you'd
+        like to donate to special ones or all our pets? We think it's important for you to choose how your donation is
+        used. </p>
+      <div class="slider meet-slider">
+        <div class="slider__buttons">
+          <button class="button button_transparent-bordered-secondary button_size60x60">
+            <svg class="button-arrow button-arrow_secondary button-arrow_reversed">
+              <use href="./assets/icons/sprite.svg#arrow"></use>
+            </svg>
+          </button>
+          <button class="button button_transparent-bordered-secondary button_size60x60">
+            <svg class="button-arrow button-arrow_secondary">
+              <use href="./assets/icons/sprite.svg#arrow"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="slider__slides">
+          <div class="slider__slide slide">
+            <div class="slide__content">
+              <div class="slide__bage">Lucas</div>
+              <picture class="slide__pic">
+                <source class="slide__img" srcset="./assets/images/slide-lucas.webp">
+                <img class="slide__img" src="./assets/images/slide-lucas.jpg" alt="slide image">
+              </picture>
+              <div class="slide__title">
+                <p class="slide__heading">Giant Panda </p>
+                <p class="slide__subheading">Native to central China, giant pandas have come to symbolize vulnerable
+                  species. </p>
+              </div>
+            </div>
+            <button class="slide__button button button_transparent button_size240x74">
+              <span class="button-label">view live cam</span>
+              <span class="button-space"></span>
+              <svg class="button-arrow button-arrow_primary">
+                <use href="./assets/icons/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="slider__slide slide">
+            <div class="slide__content">
+              <div class="slide__bage">Andy</div>
+              <picture class="slide__pic">
+                <source class="slide__img" srcset="./assets/images/slide-andy.webp">
+                <img class="slide__img" src="./assets/images/slide-andy.jpg" alt="slide image">
+              </picture>
+              <div class="slide__title">
+                <p class="slide__heading">Madagascarian Lemur </p>
+                <p class="slide__subheading">Lemurs are considered the world’s most endangered group of mammals. </p>
+              </div>
+            </div>
+            <button class="slide__button button button_transparent button_size240x74">
+              <span class="button-label">view live cam</span>
+              <span class="button-space"></span>
+              <svg class="button-arrow button-arrow_primary">
+                <use href="./assets/icons/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="slider__slide slide">
+            <div class="slide__content">
+              <div class="slide__bage">Glen</div>
+              <picture class="slide__pic">
+                <source class="slide__img" srcset="./assets/images/slide-glen.webp">
+                <img class="slide__img" src="./assets/images/slide-glen.jpg" alt="slide image">
+              </picture>
+              <div class="slide__title">
+                <p class="slide__heading">Gorilla in Congo </p>
+                <p class="slide__subheading">Variety of snacks very important for the healthy life of gorillas and his
+                  plenty of babies.</p>
+              </div>
+            </div>
+            <button class="slide__button button button_transparent button_size240x74">
+              <span class="button-label">view live cam</span>
+              <span class="button-space"></span>
+              <svg class="button-arrow button-arrow_primary">
+                <use href="./assets/icons/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="slider__slide slide">
+            <div class="slide__content">
+              <div class="slide__bage">Mike</div>
+              <picture class="slide__pic">
+                <source class="slide__img" srcset="./assets/images/slide-mike.webp">
+                <img class="slide__img" src="./assets/images/slide-mike.jpg" alt="slide image">
+              </picture>
+              <div class="slide__title">
+                <p class="slide__heading">Chinese Alligator </p>
+                <p class="slide__subheading">From nose to tail, belly to back, hard scales protect this petite
+                  alligator. </p>
+              </div>
+            </div>
+            <button class="slide__button button button_transparent button_size240x74">
+              <span class="button-label">view live cam</span>
+              <span class="button-space"></span>
+              <svg class="button-arrow button-arrow_primary">
+                <use href="./assets/icons/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="slider__slides">
+          <div class="slider__slide slide">
+            <div class="slide__content">
+              <div class="slide__bage">Sam & Lora</div>
+              <picture class="slide__pic">
+                <source class="slide__img" srcset="./assets/images/slide-sam-lora.webp">
+                <img class="slide__img" src="./assets/images/slide-sam-lora.jpg" alt="slide image">
+              </picture>
+              <div class="slide__title">
+                <p class="slide__heading">West End Bald Eagles</p>
+                <p class="slide__subheading">Pair of eagle parents lay and protect eggs, feed their chicks and teach
+                  them to hunt and fly.</p>
+              </div>
+            </div>
+            <button class="slide__button button button_transparent button_size240x74">
+              <span class="button-label">view live cam</span>
+              <span class="button-space"></span>
+              <svg class="button-arrow button-arrow_primary">
+                <use href="./assets/icons/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="slider__slide slide">
+            <div class="slide__content">
+              <div class="slide__bage">Liz</div>
+              <picture class="slide__pic">
+                <source class="slide__img" srcset="./assets/images/slide-liz.webp">
+                <img class="slide__img" src="./assets/images/slide-liz.jpg" alt="slide image">
+              </picture>
+              <div class="slide__title">
+                <p class="slide__heading">Australian Koala </p>
+                <p class="slide__subheading">The elevated walkways bring you to eye level with the koalas as they perch
+                  in their forest. </p>
+              </div>
+            </div>
+            <button class="slide__button button button_transparent button_size240x74">
+              <span class="button-label">view live cam</span>
+              <span class="button-space"></span>
+              <svg class="button-arrow button-arrow_primary">
+                <use href="./assets/icons/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="slider__slide slide">
+            <div class="slide__content">
+              <div class="slide__bage">Shake</div>
+              <picture class="slide__pic">
+                <source class="slide__img" srcset="./assets/images/slide-shake.webp">
+                <img class="slide__img" src="./assets/images/slide-shake.jpg" alt="slide image">
+              </picture>
+              <div class="slide__title">
+                <p class="slide__heading">African Lion</p>
+                <p class="slide__subheading">Lions roam the savannas and grasslands of Africa, hunting and raising cubs
+                  in the pride. </p>
+              </div>
+            </div>
+            <button class="slide__button button button_transparent button_size240x74">
+              <span class="button-label">view live cam</span>
+              <span class="button-space"></span>
+              <svg class="button-arrow button-arrow_primary">
+                <use href="./assets/icons/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="slider__slide slide">
+            <div class="slide__content">
+              <div class="slide__bage">Senja</div>
+              <picture class="slide__pic">
+                <source class="slide__img" srcset="./assets/images/slide-senja.webp">
+                <img class="slide__img" src="./assets/images/slide-senja.jpg" alt="slide image">
+              </picture>
+              <div class="slide__title">
+                <p class="slide__heading">Sumatran Tiger</p>
+                <p class="slide__subheading">Sumatran Tigers are the smallest of the five sub-species, and are found in
+                  Indonesia. </p>
+              </div>
+            </div>
+            <button class="slide__button button button_transparent button_size240x74">
+              <span class="button-label">view live cam</span>
+              <span class="button-space"></span>
+              <svg class="button-arrow button-arrow_primary">
+                <use href="./assets/icons/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="meet-button">
+        <button class="button button_transparent-bordered-secondary button_size359x74">
+          <span class="button-label">choose your favourite</span>
+          <span class="button-space"></span>
+          <svg class="button-arrow button-arrow_secondary">
+            <use href="./assets/icons/sprite.svg#arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="pay-feed">
+    <div class="wrapper pay-feed__wrapper">
+      <h2 class="heading heading_h2 heading_bright-color">pay and feed</h2>
+      <div class="pay-feed__content">
+        <div class="pay-feed-desc">
+          <div class="pay-feed-desc__divider">
+            <div class="pay-feed-desc__count">01</div>
+            <hr class="pay-feed-desc__line">
+          </div>
+          <div class="pay-feed-detail layout-2-col">
+            <picture class="pay-feed-detail__pic">
+              <source class="pay-feed-detail__img" srcset="./assets/images/pay-feed-1.webp" type="image/webp">
+              <img class="pay-feed-detail__img" src="./assets/images/pay-feed-1.jpg" alt="pay and feed image">
+            </picture>
+            <div class="pay-feed-title">
+              <svg class="pay-feed-title__icon pay-feed-title__icon_1">
+                <use href="./assets/icons/sprite.svg#pay-feed-1"></use>
+              </svg>
+              <p class="pay-feed-title__title">Your donation has an impact</p>
+              <p class="pay-feed-title__text">Providing our animals with high-quality nutritious diets is just one
+                element of animal care at our Zoo. We do all the best so that our animals can eat food similar to what
+                they might find in their natural habitats while making sure they get the right mix of nutrients,
+                proteins, and vitamins to be happy and healthy. Please help us provide nutritious food for our animals
+                by donating. The generosity of people like you can help us make sure that our animals enjoy good food
+                that keeps them in great condition.</p>
+            </div>
+          </div>
+        </div>
+        <div class="pay-feed-desc">
+          <div class="pay-feed-desc__divider">
+            <div class="pay-feed-desc__count">02</div>
+            <hr class="pay-feed-desc__line">
+          </div>
+          <div class="pay-feed-detail layout-2-col">
+            <picture class="pay-feed-detail__pic">
+              <source class="pay-feed-detail__img" srcset="./assets/images/pay-feed-2.webp" type="image/webp">
+              <img class="pay-feed-detail__img" src="./assets/images/pay-feed-2.jpg" alt="pay and feed image">
+            </picture>
+            <div class="pay-feed-title">
+              <svg class="pay-feed-title__icon pay-feed-title__icon_2">
+                <use href="./assets/icons/sprite.svg#pay-feed-2"></use>
+              </svg>
+              <p class="pay-feed-title__title">Make a donation</p>
+              <p class="pay-feed-title__text">You can donate through your credit card without any fees. It is easy and
+                safe. We do not keep donors' personal information on an online network. Choose an amount to give and the
+                pet's name if needed. One of the most effective ways you can give is by making regular donations.</p>
+            </div>
+          </div>
+        </div>
+        <div class="pay-feed-desc">
+          <div class="pay-feed-desc__divider">
+            <div class="pay-feed-desc__count">03</div>
+            <hr class="pay-feed-desc__line">
+          </div>
+          <div class="pay-feed-detail layout-2-col">
+            <picture class="pay-feed-detail__pic">
+              <source class="pay-feed-detail__img" srcset="./assets/images/pay-feed-3.webp" type="image/webp">
+              <img class="pay-feed-detail__img" src="./assets/images/pay-feed-3.jpg" alt="pay and feed image">
+            </picture>
+            <div class="pay-feed-title">
+              <svg class="pay-feed-title__icon pay-feed-title__icon_3">
+                <use href="./assets/icons/sprite.svg#pay-feed-3"></use>
+              </svg>
+              <p class="pay-feed-title__title">Bring your food charity — straight to your favorites pets.</p>
+              <p class="pay-feed-title__text">After your donation, the animal receives its favorite foods. You can
+                support your favorite animals or any animal you care about and make a real personal impact. Never doubt
+                that your donation can make a difference even if it is small. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pay-feed-button-container layout-2-col ">
+        <div class="pay-feed-empty-col"></div>
+        <div class="pay-feed-button-wrapper">
+          <button class="button button_primary button_size240x74">
+            <span class="button-label">donate now</span>
+            <span class="button-space"></span>
+            <svg class="button-arrow button-arrow_bright">
+              <use href="./assets/icons/sprite.svg#arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="our-users">
+    <div class="wrapper">
+      <div class="our-users__wrapper">
+        <div class="our-users__title">
+          <h2 class="our-users__heading heading heading_h2 heading_bright-color">what our users think</h2>
+          <p class="our-users__subheading subheading">We are continuously striving to improve the experiences of our
+            future guests. Below you
+            can leave your own feedback, or simply view feedback from past clients. </p>
+        </div>
+        <div class="feedback-container">
+          <div class="feedback-wrapper">
+            <div class="our-users__feedback feedback">
+              <div class="feedback__top">
+                <svg class="feedback__icon">
+                  <use href="./assets/icons/sprite.svg#double-quote"></use>
+                </svg>
+                <p class="feedback__title">New Jersey, June 2020</p>
+                <p class="feedback__text">I am writing to thank you for your mission is to bring people closer to
+                  nature!
+                  Like myself, children were very impressed by the opportunity to explore the life of incredible animals
+                  in
+                  real-time. </p>
+              </div>
+              <div class="feedback__author">Karen Maithlan</div>
+            </div>
+            <div class="our-users__feedback feedback">
+              <div class="feedback__top">
+                <svg class="feedback__icon">
+                  <use href="./assets/icons/sprite.svg#double-quote"></use>
+                </svg>
+                <p class="feedback__title">Toronto, November 2020</p>
+                <p class="feedback__text">We so enjoy the ever-evolving selection of animals from around the globe.
+                  THANK
+                  YOU for sharing these fascinating animal friends with us so that we may learn and increase our
+                  understanding of the animal kingdom.</p>
+              </div>
+              <div class="feedback__author">Carol Larsen</div>
+            </div>
+          </div>
+          <div class="feedback-wrapper">
+            <div class="our-users__feedback feedback">
+              <div class="feedback__top">
+                <svg class="feedback__icon">
+                  <use href="./assets/icons/sprite.svg#double-quote"></use>
+                </svg>
+                <p class="feedback__title">London, February 2020</p>
+                <p class="feedback__text">A fantastic experience for kids and adults alike! If anyone is looking for an
+                  attraction that educates people on wild animals – it's for you! I highly recommend seeing for yourself
+                  the variety of animals on your screen. </p>
+              </div>
+              <div class="feedback__author">C. Stockman</div>
+            </div>
+            <div class="our-users__feedback feedback">
+              <div class="feedback__top">
+                <svg class="feedback__icon">
+                  <use href="./assets/icons/sprite.svg#double-quote"></use>
+                </svg>
+                <p class="feedback__title">Amsterdam, June 2020</p>
+                <p class="feedback__text">I want to thank you for the amazing sites you find to put your cameras to let
+                  each of us see things that we would probably never see on our own. There are so many positives on Zoo
+                  Online and I'm grateful for it. Thank you so much!</p>
+              </div>
+              <div class="feedback__author">Tomas Ray</div>
+            </div>
+          </div>
+          <div class="feedback-button-container">
+            <button class="button button_transparent-bordered-bright button_size60x60">
+              <svg class="button-arrow button-arrow_bright button-arrow_reversed">
+                <use href="./assets/icons/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+            <button class="button button_transparent-bordered-bright button_size60x60">
+              <svg class="button-arrow button-arrow_bright ">
+                <use href="./assets/icons/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <button class="leave-feedback-button button button_transparent-bordered-bright button_size359x74">
+        <span class="button-label">leave feedback</span>
+        <span class="button-space"></span>
+        <svg class="button-arrow button-arrow_bright ">
+          <use href="./assets/icons/sprite.svg#arrow"></use>
+        </svg>
+      </button>
+    </div>
+  </section>
+
+  <section class="care-animals">
+    <div class="wrapper care-animals__wrapper">
+      <h2 class="care-animals__heading heading heading_h2 heading_alternative-color">care for the animals you love </h2>
+      <p class="care-animals__subheading subheading">You can help to look after the animals you love with your gift
+        today
+      </p>
+
+      <div class="care-card__wrapper">
+        <div class="care-card__container">
+          <picture class="care-card-bg">
+            <source class="care-card-bg__img" srcset="./assets/images/feed-card-img.webp">
+            <img class="care-card-bg__img" src="./assets/images/feed-card-img.jpg" alt="care card image">
+          </picture>
+          <div class="care-card">
+            <picture class="care-card__pic">
+              <source class="care-card__img" srcset="./assets/images/care-card-1.webp">
+              <img class="care-card__img" src="./assets/images/care-card-1.jpg" alt="care card image">
+            </picture>
+            <p class="care-card__text">Your $30 could give Lucas a slice of panda cake, made with our secret recipe.</p>
+            <button class="care-card__button button button_transparent button_size142x74">
+              <span class="button-label">feed</span>
+              <span class="button-space"></span>
+              <svg class="button-arrow button-arrow_primary ">
+                <use href="./assets/icons/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="care-card">
+            <picture class="care-card__pic">
+              <source class="care-card__img" srcset="./assets/images/care-card-2.webp">
+              <img class="care-card__img" src="./assets/images/care-card-2.jpg" alt="care card image">
+            </picture>
+            <p class="care-card__text"> Your $150 will help to care for Senja, a Sumatran tiger, for three weeks.</p>
+            <button class="care-card__button button button_transparent button_size142x74">
+              <span class="button-label">feed</span>
+              <span class="button-space"></span>
+              <svg class="button-arrow button-arrow_primary ">
+                <use href="./assets/icons/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="care-card">
+            <picture class="care-card__pic">
+              <source class="care-card__img" srcset="./assets/images/care-card-3.webp">
+              <img class="care-card__img" src="./assets/images/care-card-3.jpg" alt="care card image">
+            </picture>
+            <p class="care-card__text">With your support, we can give Andy his favorite fruits. Especially when it's not
+              fruit season in its natural habitat.</p>
+            <button class="care-card__button button button_transparent button_size142x74">
+              <span class="button-label">feed</span>
+              <span class="button-space"></span>
+              <svg class="button-arrow button-arrow_primary ">
+                <use href="./assets/icons/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="care-card">
+            <picture class="care-card__pic">
+              <source class="care-card__img" srcset="./assets/images/care-card-4.webp">
+              <img class="care-card__img" src="./assets/images/care-card-4.jpg" alt="care card image">
+            </picture>
+            <p class="care-card__text">Sam & Lora have hatched and raised numerous young and will be happy with your
+              help.</p>
+            <button class="care-card__button button button_transparent button_size142x74">
+              <span class="button-label">feed</span>
+              <span class="button-space"></span>
+              <svg class="button-arrow button-arrow_primary ">
+                <use href="./assets/icons/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="choose-button-wrapper">
+        <button class="choose-button button button_transparent-bordered-secondary button_size359x74">
+          <span class="button-label">choose your favourite</span>
+          <span class="button-space"></span>
+          <svg class="button-arrow button-arrow_secondary ">
+            <use href="./assets/icons/sprite.svg#arrow"></use>
+          </svg>
+        </button>
+      </div>
+      <picture class="care-animals__pic">
+        <source srcset="./assets/images/touch-animals.webp" type="image/webp">
+        <img src="./assets/images/touch-animals.jpg" alt="care animals image" class="care-animals__img">
+      </picture>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrapper footer__wrapper">
+      <div class="logo-nav-button-container">
+        <div class="logos">
+          <ul class="logo-list">
+            <li class="logo-item">
+              <a class="logo-link" href="./index.html">
+                <img class="logo-img" src="./assets/icons/logo-bright.svg" alt="website logo">
+              </a>
+            </li>
+            <li class="logo-item">
+              <img class="logo-img" src="./assets/icons/yem-bright.svg" alt="yem digital logo" title="Yem Digital">
+            </li>
+            <li class="logo-item">
+              <img class="logo-img" src="./assets/icons/rs-school-bright.svg" alt="rs-school logo" title="RS School">
+            </li>
+          </ul>
+        </div>
+        <nav class="navigation footer__navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link_bright" href="./index.html">about</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link_bright" href="./pages/map.html">map</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link_bright" href="./pages/zoos/zoos-pandas.html">zoos</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link_bright" href="./pages/contact-us.html">contact us</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="button button_transparent-bordered-bright button_size359x74">
+          <span class="button-label">donate for volunteers</span>
+          <span class="button-space"></span>
+          <svg class="button-arrow button-arrow_bright">
+            <use href="./assets/icons/sprite.svg#arrow"></use>
+          </svg>
+        </button>
+      </div>
+      <hr class="line footer__line">
+      <div class="copyright-socials-container">
+        <ul class="copyright">
+          <li class="copyright__item">© 2021 DinaK </li>
+          <li class="copyright__item">© Yem Digital </li>
+          <li class="copyright__item">© RSSchool</li>
+        </ul>
+        <div class="socials">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link" href="http://youtube.com">
+                <img class="socials__icon" src="./assets/icons/youtube.svg" alt="youtube link">
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="http://instagram.com">
+                <img class="socials__icon" src="./assets/icons/instagram.svg" alt="instagram link">
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="http://facebook.com">
+                <img class="socials__icon" src="./assets/icons/facebook.svg" alt="facebook link">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
 

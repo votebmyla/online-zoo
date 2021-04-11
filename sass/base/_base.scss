@@ -38,6 +38,11 @@ input {
   }
 }
 
+hr {
+  display: block;
+  border-width: 1px;
+}
+
 .wrapper {
   max-width: $content-width;
   margin: 0 auto;
@@ -65,6 +70,9 @@ input {
     font-size: 5.4rem;
     font-weight: 600;
     line-height: 6.6rem;
+  }
+  &_bright-color {
+    color: $color-bright;
   }
   &_alternative-color {
     color: $color-alternative;

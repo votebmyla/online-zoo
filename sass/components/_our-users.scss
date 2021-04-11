@@ -1,0 +1,58 @@
+.our-users {
+  background-image: url(../../assets/images/user-think-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  padding: 100px 0 150px;
+  overflow: hidden;
+}
+
+.our-users__wrapper {
+  display: flex;
+}
+
+.our-users__title {
+  width: 560px;
+  flex-shrink: 0;
+  margin-right: 40px;
+}
+
+.our-users__heading {
+  width: 440px;
+  margin-bottom: 50px;
+}
+
+.our-users__subheading {
+  font-family: $font-primary;
+  font-size: 2.6rem;
+  font-weight: 500;
+  line-height: 130%;
+  color: $color-bright;
+}
+
+.feedback-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-wrapper {
+  display: flex;
+}
+
+.our-users__feedback {
+  margin: 0 30px 30px 0;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.feedback-button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 175px;
+  margin-top: 60px;
+}
+
+.leave-feedback-button {
+  margin-top: 376px;
+}

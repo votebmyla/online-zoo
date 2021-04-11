@@ -1,0 +1,76 @@
+.pay-feed {
+  background-color: $color-secondary;
+  padding: 90px 0 100px;
+}
+
+.pay-feed-desc__divider {
+  display: flex;
+  align-items: center;
+  margin: 100px 0 90px;
+}
+
+.pay-feed-desc__count {
+  font-family: $font-primary;
+  font-size: 2.6rem;
+  font-weight: 500;
+  line-height: 130%;
+  color: $color-bright;
+  width: 120px;
+}
+
+.pay-feed-desc__line {
+  width: 100%;
+  border-color: $color-bright;
+}
+
+.pay-feed-detail__img {
+  border-radius: 5px;
+  width: 560px;
+}
+
+.pay-feed-title__icon {
+  fill: $color-alternative;
+  height: 80px;
+  margin-bottom: 30px;
+  &_1 {
+    width: 106px;
+  }
+  &_2 {
+    width: 100px;
+  }
+  &_3 {
+    width: 80px;
+  }
+}
+
+.pay-feed-title {
+  padding: 20px 0 0 20px;
+}
+
+.pay-feed-title__title,
+.pay-feed-title__text {
+  width: 560px;
+  font-family: $font-primary;
+  color: $color-bright;
+}
+
+.pay-feed-title__title {
+  font-size: 2.6rem;
+  font-weight: 500;
+  line-height: 130%;
+  margin-bottom: 50px;
+}
+
+.pay-feed-title__text {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.pay-feed-button-container {
+  margin-top: 50px;
+}
+
+.pay-feed-button-wrapper {
+  padding-left: 20px;
+}
