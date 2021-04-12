@@ -12,11 +12,32 @@
   color: $color-bright;
   max-width: 889px;
   margin-bottom: 20px;
+  &_eagle {
+    max-width: 924px;
+  }
+  &_gorilla {
+    max-width: 924px;
+  }
+  &_lemur {
+    max-width: 910px;
+  }
 }
 
 .quick-donate__subheading {
   color: $color-bright;
   max-width: 609px;
+  &_panda {
+    max-width: 873px;
+  }
+  &_eagle {
+    max-width: 924px;
+  }
+  &_gorilla {
+    max-width: 924px;
+  }
+  &_lemur {
+    max-width: 910px;
+  }
 }
 
 .quick-donate__form {

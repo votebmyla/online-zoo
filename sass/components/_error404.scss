@@ -1,0 +1,41 @@
+.error-404 {
+  background-image: url(../../assets/images/404-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.error-404__wrapper {
+  // height: 800px;
+  padding: 100px 200px;
+  font-family: $font-primary;
+}
+
+.error {
+  font-size: 14rem;
+  font-weight: 900;
+  line-height: 100%;
+  text-transform: capitalize;
+  text-align: end;
+  color: $color-secondary;
+  text-shadow: 7px 7px $color-bright;
+}
+
+.four-o-four {
+  font-size: 40rem;
+  font-weight: 900;
+  line-height: 100%;
+  text-transform: capitalize;
+  color: $color-primary;
+  text-shadow: 10px 10px $color-secondary;
+}
+
+.page-not-found {
+  font-size: 10rem;
+  font-weight: 900;
+  line-height: 150%;
+  text-transform: capitalize;
+  text-align: end;
+  color: $color-primary;
+  text-shadow: 5px 5px $color-bright;
+}

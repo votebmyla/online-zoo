@@ -77,6 +77,9 @@ hr {
 .heading_alternative-color {
   color: #00a092;
 }
+.heading_secondary-color {
+  color: #20113d;
+}
 .heading_h3 {
   font-size: 4.2rem;
   font-weight: 500;
@@ -127,9 +130,6 @@ hr {
   color: #ffffff;
   transition: all 0.2s ease-in-out;
 }
-.button_primary:focus {
-  outline: none;
-}
 .button_primary:hover {
   background-color: #d26004;
   box-shadow: 0px 4px 30px rgba(245, 130, 36, 0.3);
@@ -141,6 +141,14 @@ hr {
 .button_transparent:hover {
   background-color: #f58021;
   color: #ffffff;
+}
+.button_alternative {
+  background-color: #00a092;
+  color: #ffffff;
+}
+.button_alternative:hover {
+  background-color: #05786e;
+  box-shadow: 0px 4px 30px rgba(0, 160, 146, 0.3);
 }
 .button_transparent-bordered-secondary {
   background-color: transparent;
@@ -361,10 +369,31 @@ hr {
   max-width: 889px;
   margin-bottom: 20px;
 }
+.quick-donate__heading_eagle {
+  max-width: 924px;
+}
+.quick-donate__heading_gorilla {
+  max-width: 924px;
+}
+.quick-donate__heading_lemur {
+  max-width: 910px;
+}
 
 .quick-donate__subheading {
   color: #ffffff;
   max-width: 609px;
+}
+.quick-donate__subheading_panda {
+  max-width: 873px;
+}
+.quick-donate__subheading_eagle {
+  max-width: 924px;
+}
+.quick-donate__subheading_gorilla {
+  max-width: 924px;
+}
+.quick-donate__subheading_lemur {
+  max-width: 910px;
 }
 
 .quick-donate__form {
@@ -533,6 +562,11 @@ hr {
 .slide__button {
   position: absolute;
   bottom: 50px;
+}
+
+.slide-button-link {
+  display: flex;
+  justify-content: center;
 }
 
 .pay-feed {
@@ -799,7 +833,6 @@ hr {
 
 .footer {
   background-color: #20113d;
-  height: 330px;
   padding: 70px 0 36px;
 }
 
@@ -850,6 +883,595 @@ hr {
   font-weight: 400;
   line-height: 150%;
   color: #ffffff;
+}
+
+.zoos-body {
+  position: relative;
+}
+
+.live-cams__wrapper {
+  padding: 50px 0 150px;
+}
+
+.live-cams-top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 45px;
+}
+.live-cams-top-container > * {
+  flex-basis: 20%;
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 0;
+}
+
+.live-cams__heading {
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.more-live-views {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.live-cams-slider-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.live-cams-slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 13px;
+  width: 1040px;
+}
+
+.more-live-views__heading {
+  margin-bottom: 30px;
+}
+
+.sticky-container {
+  position: absolute;
+  height: calc(100% - 446px);
+}
+
+.know {
+  padding: 150px 0;
+}
+
+.did-you-know {
+  max-width: 1040px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 50px 60px;
+  margin: 0 auto;
+}
+
+.did-you-know__heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.did-you-know__subheading {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.6rem;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+.animal-info-container {
+  margin: 150px 0 50px;
+}
+
+.animal-info {
+  padding-bottom: 50px;
+}
+
+.animal-info__details-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.animal-info__details-item {
+  display: flex;
+  align-items: center;
+}
+.animal-info__details-item:last-child {
+  position: relative;
+  max-width: calc(100% - 240px);
+}
+
+.animal-info__key {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.6rem;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+.animal-info__value {
+  padding-left: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.animal-info__button {
+  position: absolute;
+  left: 100%;
+}
+
+.animal-info__pic {
+  margin-left: 20px;
+}
+
+.animal-info__img {
+  width: 440px;
+  height: 440px;
+  border-radius: 5px;
+}
+
+.animal-info__about {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 150%;
+  max-width: 1160px;
+}
+
+.sidebar {
+  position: sticky;
+  transition: all 0.2s ease-in-out;
+}
+.sidebar-zoos {
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  height: 846px;
+  background-color: #20113d;
+  border: 1px solid #ffffff;
+}
+.sidebar-zoos_closed {
+  width: 220px;
+}
+
+.sidebar__top {
+  position: relative;
+}
+.sidebar__top_zoos {
+  display: flex;
+  padding: 30px;
+  justify-content: flex-end;
+}
+
+.button-sidebar {
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  border: none;
+  background-color: #20113d;
+  outline: none;
+  cursor: pointer;
+}
+
+.sidebar-arrow {
+  width: 16px;
+  height: 15px;
+}
+.sidebar-arrow_zoos {
+  fill: #ffffff;
+  transform: rotate(180deg);
+}
+
+.sidebar-animals {
+  border-top: 1px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 170px;
+}
+
+.sidebar-title {
+  width: 170px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  line-height: 150%;
+  color: #ffffff;
+  margin-left: 20px;
+}
+
+.sidebar-animal {
+  fill: #f58021;
+  width: 67px;
+}
+.sidebar-animal_current {
+  fill: #ffffff;
+}
+.sidebar-animal_panda {
+  height: 50px;
+}
+.sidebar-animal_eagle {
+  height: 50px;
+}
+.sidebar-animal_gorilla {
+  height: 50px;
+}
+.sidebar-animal_lemur {
+  height: 50px;
+}
+
+.sidebar__bottom {
+  border-top: 1px solid #ffffff;
+  height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.down-arrow_sidebar {
+  width: 15px;
+  height: 9px;
+  fill: #ffffff;
+}
+
+.sidebar-zoos_closed .sidebar-arrow_zoos {
+  transform: rotate(0);
+}
+
+.sidebar-zoos_closed .sidebar-title {
+  display: none;
+}
+
+.circle {
+  fill: #f58021;
+  width: 120px;
+  height: 120px;
+  display: none;
+}
+
+.sidebar-zoos_closed .circle {
+  display: block;
+}
+
+.sidebar-zoos_closed .sidebar-animals {
+  position: relative;
+}
+
+.sidebar-zoos_closed .sidebar-animal_current.sidebar-animal + .circle {
+  fill: #ffffff;
+  stroke: #ffffff;
+}
+.sidebar-zoos_closed .sidebar-animal_current.sidebar-animal_panda {
+  height: 60px;
+  width: 80px;
+  fill: #20113d;
+  position: absolute;
+}
+.sidebar-zoos_closed .sidebar-animal_current.sidebar-animal_eagle {
+  height: 60px;
+  width: 80px;
+  fill: #20113d;
+  position: absolute;
+}
+.sidebar-zoos_closed .sidebar-animal_current.sidebar-animal_gorilla {
+  height: 60px;
+  width: 80px;
+  fill: #20113d;
+  position: absolute;
+}
+.sidebar-zoos_closed .sidebar-animal_current.sidebar-animal_lemur {
+  height: 60px;
+  width: 80px;
+  fill: #20113d;
+  position: absolute;
+}
+
+.sidebar-zoos_closed .sidebar-animal_panda {
+  height: 60px;
+  width: 80px;
+  fill: #20113d;
+  position: absolute;
+}
+.sidebar-zoos_closed .sidebar-animal_eagle {
+  height: 60px;
+  width: 80px;
+  fill: #20113d;
+  position: absolute;
+}
+.sidebar-zoos_closed .sidebar-animal_gorilla {
+  height: 60px;
+  width: 80px;
+  fill: #20113d;
+  position: absolute;
+}
+.sidebar-zoos_closed .sidebar-animal_lemur {
+  height: 60px;
+  width: 80px;
+  fill: #20113d;
+  position: absolute;
+}
+
+.bage {
+  border-radius: 0 0 5px 0;
+}
+.bage_sidebar-zoos {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #f58021;
+  padding: 8px 24px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bage-label {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+.bage-label_sidebar {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+  margin-right: 10px;
+}
+.bage-label_bright {
+  color: #ffffff;
+}
+
+.bage-icon_bright {
+  fill: #ffffff;
+  width: 20px;
+  height: 20px;
+}
+
+.map {
+  padding: 40px 0 150px;
+}
+
+.map__heading {
+  width: 601px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.world-map-pic {
+  position: relative;
+  width: 1400px;
+  height: 908px;
+}
+
+.world-map {
+  width: 1400px;
+  height: 908px;
+}
+
+.animal-location {
+  position: absolute;
+  transform: translate(-53px, -145px);
+}
+.animal-location_eagle {
+  top: 59.25%;
+  left: 15.28%;
+}
+.animal-location_alligator {
+  top: 58.99%;
+  left: 24.11%;
+}
+.animal-location_lion {
+  top: 64.14%;
+  left: 44.38%;
+}
+.animal-location_panda {
+  top: 52.85%;
+  left: 71.12%;
+}
+.animal-location_gorilla {
+  top: 66.66%;
+  left: 52.63%;
+}
+.animal-location_tiger {
+  top: 69.51%;
+  left: 75.46%;
+}
+.animal-location_lemur {
+  top: 79.82%;
+  left: 59.88%;
+}
+.animal-location_koala {
+  top: 82.56%;
+  left: 84.92%;
+}
+
+.tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 106px;
+  height: 150px;
+}
+
+.location {
+  width: 106px;
+  height: 150px;
+  fill: #f58021;
+  stroke: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.animal-location__link:hover .location {
+  fill: #ffffff;
+  stroke: #ffffff;
+  filter: drop-shadow(0px 3px 3px #f58021);
+}
+
+.animal-icon {
+  position: absolute;
+  fill: #20113d;
+}
+.animal-icon_eagle {
+  width: 54px;
+  height: 51px;
+  left: 25px;
+  top: 32px;
+}
+.animal-icon_alligator {
+  width: 59px;
+  height: 48px;
+  left: 23px;
+  top: 32px;
+}
+.animal-icon_lion {
+  width: 53px;
+  height: 47px;
+  left: 23px;
+  top: 32px;
+}
+.animal-icon_panda {
+  width: 68px;
+  height: 50px;
+  left: 19px;
+  top: 26px;
+}
+.animal-icon_gorilla {
+  width: 58px;
+  height: 50px;
+  left: 23px;
+  top: 27px;
+}
+.animal-icon_tiger {
+  width: 64px;
+  height: 54px;
+  left: 22px;
+  top: 28px;
+}
+.animal-icon_lemur {
+  width: 30px;
+  height: 51px;
+  left: 39px;
+  top: 32px;
+}
+.animal-icon_koala {
+  width: 44px;
+  height: 55px;
+  left: 31px;
+  top: 32px;
+}
+
+.in-touch-content {
+  padding: 150px 0;
+}
+
+.in-touch__heading {
+  margin-bottom: 50px;
+}
+
+.in-touch__text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 150%;
+  width: 545px;
+}
+
+.in-touch__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.in-touch__input-wrapper,
+.in-touch__textarea-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.in-touch__input,
+.in-touch__textarea {
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 17px 20px;
+  margin-bottom: 30px;
+}
+
+.in-touch__input:focus:valid,
+.in-touch__textarea:focus:valid {
+  border-color: #00a092;
+  box-shadow: 0px 4px 30px rgba(0, 160, 146, 0.3);
+  color: #00a092;
+}
+.in-touch__input:focus:invalid,
+.in-touch__textarea:focus:invalid {
+  border-color: #f58021;
+  background-color: rgba(245, 128, 33, 0.3);
+}
+
+.in-touch__textarea {
+  resize: none;
+}
+.in-touch__textarea:focus {
+  outline: none;
+}
+
+.in-touch__input-label,
+.in-touch__textarea-label {
+  margin-bottom: 10px;
+}
+
+.in-touch__button {
+  margin-top: 67px;
+}
+
+.error-404 {
+  background-image: url(../../assets/images/404-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.error-404__wrapper {
+  padding: 100px 200px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.error {
+  font-size: 14rem;
+  font-weight: 900;
+  line-height: 100%;
+  text-transform: capitalize;
+  text-align: end;
+  color: #20113d;
+  text-shadow: 7px 7px #ffffff;
+}
+
+.four-o-four {
+  font-size: 40rem;
+  font-weight: 900;
+  line-height: 100%;
+  text-transform: capitalize;
+  color: #f58021;
+  text-shadow: 10px 10px #20113d;
+}
+
+.page-not-found {
+  font-size: 10rem;
+  font-weight: 900;
+  line-height: 150%;
+  text-transform: capitalize;
+  text-align: end;
+  color: #f58021;
+  text-shadow: 5px 5px #ffffff;
 }
 
 .layout-2-col {

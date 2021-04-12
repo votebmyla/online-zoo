@@ -14,9 +14,6 @@
     background-color: $color-primary;
     color: $color-bright;
     transition: $transition;
-    &:focus {
-      outline: none;
-    }
     &:hover {
       background-color: $color-primary-darker;
       box-shadow: 0px 4px 30px rgba(245, 130, 36, 0.3);
@@ -28,6 +25,14 @@
     &:hover {
       background-color: $color-primary;
       color: $color-bright;
+    }
+  }
+  &_alternative {
+    background-color: $color-alternative;
+    color: $color-bright;
+    &:hover {
+      background-color: $color-alternative-darker;
+      box-shadow: 0px 4px 30px rgba(0, 160, 146, 0.3);
     }
   }
   &_transparent-bordered-secondary {

@@ -1,0 +1,111 @@
+.animal-location {
+  position: absolute;
+  transform: translate(-53px, -145px);
+  &_eagle {
+    top: 59.25%;
+    left: 15.28%;
+  }
+  &_alligator {
+    top: 58.99%;
+    left: 24.11%;
+  }
+  &_lion {
+    top: 64.14%;
+    left: 44.38%;
+  }
+  &_panda {
+    top: 52.85%;
+    left: 71.12%;
+  }
+  &_gorilla {
+    top: 66.66%;
+    left: 52.63%;
+  }
+  &_tiger {
+    top: 69.51%;
+    left: 75.46%;
+  }
+  &_lemur {
+    top: 79.82%;
+    left: 59.88%;
+  }
+  &_koala {
+    top: 82.56%;
+    left: 84.92%;
+  }
+}
+
+.tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 106px;
+  height: 150px;
+}
+
+.location {
+  width: 106px;
+  height: 150px;
+  fill: $color-primary;
+  stroke: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.animal-location__link:hover .location {
+  fill: $color-bright;
+  stroke: $color-bright;
+  filter: drop-shadow(0px 3px 3px rgba(245, 128, 33, 4.7));
+}
+
+.animal-icon {
+  position: absolute;
+  fill: $color-secondary;
+  &_eagle {
+    width: 54px;
+    height: 51px;
+    left: 25px;
+    top: 32px;
+  }
+  &_alligator {
+    width: 59px;
+    height: 48px;
+    left: 23px;
+    top: 32px;
+  }
+  &_lion {
+    width: 53px;
+    height: 47px;
+    left: 23px;
+    top: 32px;
+  }
+  &_panda {
+    width: 68px;
+    height: 50px;
+    left: 19px;
+    top: 26px;
+  }
+  &_gorilla {
+    width: 58px;
+    height: 50px;
+    left: 23px;
+    top: 27px;
+  }
+  &_tiger {
+    width: 64px;
+    height: 54px;
+    left: 22px;
+    top: 28px;
+  }
+  &_lemur {
+    width: 30px;
+    height: 51px;
+    left: 39px;
+    top: 32px;
+  }
+  &_koala {
+    width: 44px;
+    height: 55px;
+    left: 31px;
+    top: 32px;
+  }
+}

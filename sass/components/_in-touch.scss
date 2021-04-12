@@ -1,0 +1,62 @@
+.in-touch-content {
+  padding: 150px 0;
+}
+
+.in-touch__heading {
+  margin-bottom: 50px;
+}
+
+.in-touch__text {
+  font-family: $font-primary;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 150%;
+  width: 545px;
+}
+
+.in-touch__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.in-touch__input-wrapper,
+.in-touch__textarea-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.in-touch__input,
+.in-touch__textarea {
+  border: 1px solid $color-dark;
+  border-radius: 5px;
+  padding: 17px 20px;
+  margin-bottom: 30px;
+}
+
+.in-touch__input:focus,
+.in-touch__textarea:focus {
+  &:valid {
+    border-color: $color-alternative;
+    box-shadow: 0px 4px 30px rgba(0, 160, 146, 0.3);
+    color: $color-alternative;
+  }
+  &:invalid {
+    border-color: $color-primary;
+    background-color: rgba(245, 128, 33, 0.3);
+  }
+}
+
+.in-touch__textarea {
+  resize: none;
+  &:focus {
+    outline: none;
+  }
+}
+.in-touch__input-label,
+.in-touch__textarea-label {
+  margin-bottom: 10px;
+}
+
+.in-touch__button {
+  margin-top: 67px;
+}

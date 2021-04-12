@@ -1,0 +1,175 @@
+.sidebar {
+  position: sticky;
+  transition: all 0.2s ease-in-out;
+  &-zoos {
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    height: 846px;
+    background-color: $color-secondary;
+    border: 1px solid $color-bright;
+    &_closed {
+      width: 220px;
+    }
+  }
+}
+
+.sidebar__top {
+  position: relative;
+  &_zoos {
+    display: flex;
+    padding: 30px;
+    justify-content: flex-end;
+  }
+}
+
+.button-sidebar {
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  border: none;
+  background-color: $color-secondary;
+  outline: none;
+  cursor: pointer;
+}
+
+.sidebar-arrow {
+  width: 16px;
+  height: 15px;
+  &_zoos {
+    fill: $color-bright;
+    transform: rotate(180deg);
+  }
+}
+
+.sidebar-animals {
+  border-top: 1px solid $color-bright;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 170px;
+}
+
+.sidebar-title {
+  width: 170px;
+  font-family: $font-primary;
+  font-size: 1.8rem;
+  line-height: 150%;
+  color: $color-bright;
+  margin-left: 20px;
+}
+
+.sidebar-animal {
+  fill: $color-primary;
+  width: 67px;
+  &_current {
+    fill: $color-bright;
+  }
+  &_panda {
+    height: 50px;
+  }
+  &_eagle {
+    height: 50px;
+  }
+  &_gorilla {
+    height: 50px;
+  }
+  &_lemur {
+    height: 50px;
+  }
+}
+
+.sidebar__bottom {
+  border-top: 1px solid $color-bright;
+  height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.down-arrow_sidebar {
+  width: 15px;
+  height: 9px;
+  fill: $color-bright;
+}
+
+.sidebar-zoos_closed .sidebar-arrow_zoos {
+  transform: rotate(0);
+}
+
+.sidebar-zoos_closed .sidebar-title {
+  display: none;
+}
+
+.circle {
+  fill: $color-primary;
+  width: 120px;
+  height: 120px;
+  display: none;
+}
+
+.sidebar-zoos_closed .circle {
+  display: block;
+}
+
+.sidebar-zoos_closed .sidebar-animals {
+  position: relative;
+}
+.sidebar-zoos_closed .sidebar-animal_current.sidebar-animal {
+  & + .circle {
+    fill: $color-bright;
+    stroke: $color-bright;
+  }
+  &_panda {
+    height: 60px;
+    width: 80px;
+    fill: $color-secondary;
+    position: absolute;
+  }
+  &_eagle {
+    height: 60px;
+    width: 80px;
+    fill: $color-secondary;
+    position: absolute;
+  }
+  &_gorilla {
+    height: 60px;
+    width: 80px;
+    fill: $color-secondary;
+    position: absolute;
+  }
+  &_lemur {
+    height: 60px;
+    width: 80px;
+    fill: $color-secondary;
+    position: absolute;
+  }
+}
+
+.sidebar-zoos_closed .sidebar-animal {
+  &_panda {
+    height: 60px;
+    width: 80px;
+    fill: $color-secondary;
+    position: absolute;
+  }
+  &_eagle {
+    height: 60px;
+    width: 80px;
+    fill: $color-secondary;
+    position: absolute;
+  }
+  &_gorilla {
+    height: 60px;
+    width: 80px;
+    fill: $color-secondary;
+    position: absolute;
+  }
+  &_lemur {
+    height: 60px;
+    width: 80px;
+    fill: $color-secondary;
+    position: absolute;
+  }
+}

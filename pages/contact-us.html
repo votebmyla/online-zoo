@@ -5,64 +5,61 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="../assets/icons/favicon.svg">
+  <link rel="icon" href="./assets/icons/favicon.svg">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@800&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="../assets/normalize/normalize.min.css">
-  <link rel="stylesheet" href="../main.css">
-  <title>Online zoo | Zoos</title>
+  <link rel="stylesheet" href="../../assets/normalize/normalize.min.css">
+  <link rel="stylesheet" href="../../style/style.css">
+  <title>Online Zoo | Contact Us</title>
 </head>
 
 <body>
 
-  <header class="header" id="header">
+  <header class="header">
     <div class="wrapper header__wrapper">
       <div class="logo">
-        <a href="../main.html" class="logo-link">
-          <img class="logo-img" id="logo-header" src="../assets/icons/logo.svg" alt="logo-icon">
+        <a href="../../index.html">
+          <img src="../../assets/icons/logo.svg" alt="website logo">
         </a>
       </div>
-      <h1 class="visually-hidden">Online Zoo</h1>
-      <div class="header__content">
-        <div class="header__nav">
-          <nav class="nav">
-            <ul class="nav-menu">
-              <li class="nav-item">
-                <a href="../../main.html" class="nav-link">about</a>
-              </li>
-              <li class="nav-item">
-                <a href="../../pages/map.html" class="nav-link">map</a>
-              </li>
-              <li class="nav-item">
-                <a href="../../pages/zoos.html" class="nav-link">zoos</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link nav-link_current">contact&nbsp;us</a>
-              </li>
-              <li class="nav-item">
-                <a href="https://www.figma.com/file/lnK11foY8Aoa6oOlDXovVN/Online-ZOO-Project" target="blank"
-                  class="nav-link">design</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+      <h1 class="visually-hidden">Online Zoo</h1> <!-- SEO -->
+      <div class="nav-socials">
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="../index.html">about</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="../../pages/map.html">map</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="../../pages/zoos/zoos-pandas.html">zoos</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link_current" href="../../pages/contact-us.html">contact us</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link"
+                href="https://www.figma.com/file/lnK11foY8Aoa6oOlDXovVN/Online-ZOO-Project">design</a>
+            </li>
+          </ul>
+        </nav>
         <div class="socials">
-          <ul class="socials-list">
-            <li class="socials-item">
-              <a href="http://www.youtube.com" target="blank">
-                <img src="../assets/icons/youtube.svg" alt="youtube link">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link" href="http://youtube.com">
+                <img class="socials__icon" src="../../assets/icons/youtube.svg" alt="youtube link">
               </a>
             </li>
-            <li class="socials-item">
-              <a href="http://www.instagram.com" target="blank">
-                <img src="../assets/icons/instagram.svg" alt="instagram link">
+            <li class="socials__item">
+              <a class="socials__link" href="http://instagram.com">
+                <img class="socials__icon" src="../../assets/icons/instagram.svg" alt="instagram link">
               </a>
             </li>
-            <li class="socials-item">
-              <a href="http://www.facebook.com" target="blank">
-                <img src="../assets/icons/facebook.svg" alt="facebook link">
+            <li class="socials__item">
+              <a class="socials__link" href="http://facebook.com">
+                <img class="socials__icon" src="../../assets/icons/facebook.svg" alt="facebook link">
               </a>
             </li>
           </ul>
@@ -71,134 +68,120 @@
     </div>
   </header>
 
-  <section class="contact-us-section">
-    <div class="wrapper contact-us-wrapper">
-      <div class="contact-us-bg"></div>
-
-      <div class="contact-us-content layout-2-column">
-        <div class="column-us-item">
-          <h2 class="contact-us-header heading heading__h2 heading_alternative">Get in touch</h2>
-          <p class="contact-us-text">Whether you have a question, or would like to say hello, we're happy to hear from
+  <section class="contact-us">
+    <div class="wrapper contact-us__wrapper">
+      <picture class="contact-us-pic">
+        <source srcset="../assets/images/contact-us-bg.webp" type="image/webp">
+        <img class="contact-us-img" src="../assets/images/contact-us-bg.jpg" alt="contact us page image">
+      </picture>
+      <div class="in-touch-content layout-2-col">
+        <div class="in-touch__about">
+          <h2 class="in-touch__heading heading heading_h2 heading_alternative-color">Get in touch</h2>
+          <p class="in-touch__text">Whether you have a question, or would like to say hello, we're happy to hear from
             you. Please use the form to send us a message and we'll get back to you as soon as we can. Whether you have
             a question, or would like to say hello, we're happy to hear from you. Please use the form to send us a
             message and we'll get back to you as soon as we can. </p>
         </div>
-        <div class="column-us-item inputs-column">
-          <div class="input-container">
-            <label for="contact-us-name" class="contact-us-name"><span class="alternative-star">*</span> Your Name
-            </label>
-            <input class="input contact-us-name-input" id="contact-us-name" type="text"
-              placeholder="First and last name">
-          </div>
-          <div class="input-container">
-            <label for="contact-us-email"><span class="alternative-star">*</span> Your Email Address</label>
-            <input class="input contact-us-email-input" id="contact-us-email" type="email"
-              placeholder="Enter your email">
-          </div>
-          <div class="input-container">
-            <label for="contact-us-subject" class="contact-us-subject"><span class="alternative-star">*</span> Subject
-            </label>
-            <input class="input contact-us-subject-input" id="contact-us-subject" type="text"
-              placeholder="Enter the subject">
-          </div>
-          <div class="input-container">
-            <label for="contact-us-message"><span class="alternative-star">*</span> Message </label>
-            <textarea class="input contact-us-message-input" id="contact-us-message"
-              placeholder="Enter your message"></textarea>
-          </div>
-          <button class="button button__alternative button_size-359x74">
-            <span class="button-label">send message</span>
-            <span class="button-space"></span>
-            <svg class="button-arrow button-arrow_bright">
-              <use href="../assets/icons/sprite.svg#button-arrow"></use>
-            </svg>
-          </button>
+        <div class="in-touch__form-container">
+          <form action="#" class="in-touch__form">
+            <div class="in-touch__input-wrapper">
+              <label class="in-touch__input-label" for="in-touch-input-your-name">* Your Name </label>
+              <input class="in-touch__input" id="in-touch-input-your-name" type="text" required
+                placeholder="First and last name">
+            </div>
+            <div class="in-touch__input-wrapper">
+              <label class="in-touch__input-label" for="in-touch-input-your-email">* Your Email Address </label>
+              <input class="in-touch__input in-touch__input-email" id="in-touch-input-your-email" type="email" required
+                placeholder="Enter your email">
+            </div>
+            <div class="in-touch__input-wrapper">
+              <label class="in-touch__input-label" for="in-touch-input-subject">* Subject</label>
+              <input class="in-touch__input" id="in-touch-input-subject" type="text" required
+                placeholder="Enter the subject">
+            </div>
+            <div class="in-touch__textarea-wrapper">
+              <label class="in-touch__textarea-label" for="in-touch-textarea-message">* Message </label>
+              <textarea class="in-touch__textarea" name="" id="in-touch-textarea-message" required rows="9"
+                placeholder="Enter your message"></textarea>
+            </div>
+            <button class="in-touch__button button button_alternative button_size359x74">
+              <span class="button-label">send message</span>
+              <span class="button-space"></span>
+              <svg class="button-arrow button-arrow_bright">
+                <use href="../assets/icons/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </div>
   </section>
 
-
   <footer class="footer">
     <div class="wrapper footer__wrapper">
-      <div class="footer__menu">
-        <div class="footer-logos">
+      <div class="logo-nav-button-container">
+        <div class="logos">
           <ul class="logo-list">
             <li class="logo-item">
-              <a href="../../main.html" class="link">
-                <svg class="online-zoo-logo logo-item">
-                  <use href="../../assets/icons/sprite.svg#online-zoo-logo"></use>
-                </svg>
+              <a class="logo-link" href="../index.html">
+                <img class="logo-img" src="../../assets/icons/logo-bright.svg" alt="website logo">
               </a>
             </li>
             <li class="logo-item">
-              <div class="link" title="Yem Digital">
-                <svg class="yem-logo logo-item">
-                  <use href="../../assets/icons/sprite.svg#yem-digital-logo"></use>
-                </svg>
-              </div>
+              <img class="logo-img" src="../../assets/icons/yem-bright.svg" alt="yem digital logo" title="Yem Digital">
             </li>
             <li class="logo-item">
-              <div class="link" title="Rolling Scopes School">
-                <svg class="rs-school-logo logo-item">
-                  <use href="../../assets/icons/sprite.svg#rs-school-logo"></use>
-                </svg>
-              </div>
+              <img class="logo-img" src="../../assets/icons/rs-school-bright.svg" alt="rs-school logo"
+                title="RS School">
             </li>
           </ul>
         </div>
-        <div class="footer__nav">
-          <nav class="nav">
-            <ul class="nav-menu">
-              <li class="nav-item">
-                <a href="../../main.html" class="nav-link">about</a>
-              </li>
-              <li class="nav-item">
-                <a href="../../pages/map.html" class="nav-link">map</a>
-              </li>
-              <li class="nav-item">
-                <a href="../../pages/zoos/zoos-pandas.html" class="nav-link">zoos</a>
-              </li>
-              <li class="nav-item">
-                <a href="../../pages/contact-us.html" class="nav-link">contact&nbsp;us</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="footer-buttons">
-          <button class="button button__transparent-bright button_bordered-bright button_size-359x74">
-            <span class="button-label">donate for volunteers</span>
-            <span class="button-space"></span>
-            <svg class="button-arrow button-arrow_bright">
-              <use href="../../assets/icons/sprite.svg#button-arrow"></use>
-            </svg>
-          </button>
-        </div>
+        <nav class="navigation footer__navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link_bright" href="../index.html">about</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link_bright" href="../pages/map.html">map</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link_bright" href="../pages/zoos/zoos-pandas.html">zoos</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link_bright" href="../pages/contact-us.html">contact us</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="button button_transparent-bordered-bright button_size359x74">
+          <span class="button-label">donate for volunteers</span>
+          <span class="button-space"></span>
+          <svg class="button-arrow button-arrow_bright">
+            <use href="../../assets/icons/sprite.svg#arrow"></use>
+          </svg>
+        </button>
       </div>
-      <hr class="footer-hr">
-      <div class="footer-bottom">
-        <div class="copyrights">
-          <ul class="copyright-list">
-            <li class="copyright-item">© 2021 DinaK </li>
-            <li class="copyright-item">© Yem Digital </li>
-            <li class="copyright-item">© RSSchool</li>
-          </ul>
-        </div>
+      <hr class="line footer__line">
+      <div class="copyright-socials-container">
+        <ul class="copyright">
+          <li class="copyright__item">© 2021 DinaK </li>
+          <li class="copyright__item">© Yem Digital </li>
+          <li class="copyright__item">© RSSchool</li>
+        </ul>
         <div class="socials">
-          <ul class="socials-list">
-            <li class="socials-item_footer socials-item">
-              <a href="http://www.youtube.com" target="blank">
-                <img src="../../assets/icons/youtube.svg" alt="youtube link">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link" href="http://youtube.com">
+                <img class="socials__icon" src="../../assets/icons/youtube.svg" alt="youtube link">
               </a>
             </li>
-            <li class="socials-item_footer socials-item">
-              <a href="http://www.instagram.com" target="blank">
-                <img src="../../assets/icons/instagram.svg" alt="instagram link">
+            <li class="socials__item">
+              <a class="socials__link" href="http://instagram.com">
+                <img class="socials__icon" src="../../assets/icons/instagram.svg" alt="instagram link">
               </a>
             </li>
-            <li class="socials-item_footer socials-item">
-              <a href="http://www.facebook.com" target="blank">
-                <img src="../../assets/icons/facebook.svg" alt="facebook link">
+            <li class="socials__item">
+              <a class="socials__link" href="http://facebook.com">
+                <img class="socials__icon" src="../../assets/icons/facebook.svg" alt="facebook link">
               </a>
             </li>
           </ul>
