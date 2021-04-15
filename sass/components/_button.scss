@@ -125,3 +125,10 @@
 .button_transparent-bordered-secondary.button_size60x60:hover {
   background-color: $color-secondary;
 }
+
+@include media-mobile {
+  .button_320x45 {
+    width: 320px;
+    height: 45px;
+  }
+}

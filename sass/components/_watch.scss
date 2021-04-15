@@ -45,12 +45,36 @@
   }
   .watch__heading {
     width: auto;
-    font-size: 7.2rem;
-    line-height: 8.8rem;
   }
+
   .watch__bg {
     height: 644px;
     background-size: contain;
     background-position: bottom;
+  }
+}
+
+@include media-mobile {
+  .watch__bg {
+    height: 685px;
+    background-image: url(../assets/images/top-background-320.jpg);
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: bottom;
+  }
+  .watch__wrapper {
+    padding: 20px 10px 0;
+  }
+  .watch__content {
+    justify-content: flex-start;
+    height: auto;
+  }
+  .watch__heading {
+    margin-bottom: 20px;
+    width: auto;
+  }
+  .watch__subheading {
+    width: auto;
+    margin-bottom: 30px;
   }
 }
