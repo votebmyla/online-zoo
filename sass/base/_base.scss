@@ -61,7 +61,7 @@ hr {
   font-style: normal;
   text-transform: uppercase;
   &_h1 {
-    font-size: 8.8rem;
+    font-size: 8.2rem;
     font-weight: 800;
     line-height: 10rem;
     letter-spacing: 0.01rem;
@@ -92,4 +92,22 @@ hr {
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 150%;
+}
+
+@include media-laptop {
+  .wrapper {
+    max-width: $laptop-width;
+  }
+}
+
+@include media-tablet {
+  .wrapper {
+    max-width: $tablet-width;
+  }
+}
+
+@include media-mobile {
+  .wrapper {
+    max-width: $mobile-width;
+  }
 }

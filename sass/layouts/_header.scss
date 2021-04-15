@@ -8,3 +8,26 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.nav-socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+}
+
+@include media-laptop {
+  .header__wrapper {
+    padding: 0 100px;
+  }
+}
+
+@include media-tablet {
+  .header__wrapper {
+    padding: 0 47px 0 20px;
+  }
+  .nav-socials {
+    display: none;
+  }
+}

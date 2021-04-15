@@ -1,14 +1,19 @@
 .bage {
   border-radius: 0 0 5px 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   &_sidebar-zoos {
-    position: absolute;
-    left: 0;
-    top: 0;
     background-color: $color-primary;
     padding: 8px 24px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+  }
+  &_live-cams-slide {
+    border-radius: 5px 0;
+    border: 1px solid $color-bright;
+    padding: 6px 40px;
   }
 }
 
@@ -19,6 +24,9 @@
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 2.2rem;
+    margin-right: 10px;
+  }
+  &_live-cams-slide {
     margin-right: 10px;
   }
   &_bright {

@@ -26,8 +26,7 @@
 }
 
 .care-card-bg {
-  width: 920px;
-  height: 658px;
+  max-width: 920px;
 }
 
 .care-card-bg__img {
@@ -38,4 +37,61 @@
 
 .choose-button {
   margin: 100px auto 150px;
+}
+
+@include media-laptop {
+  .care-animals__wrapper {
+    padding: 150px 0 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .care-animals__heading {
+    margin-bottom: 30px;
+  }
+  .care-animals__subheading {
+    margin-bottom: 50px;
+  }
+  .care-card__wrapper {
+    margin: 0 auto;
+  }
+  .care-card__container {
+    width: 930px;
+  }
+
+  .care-card-bg {
+    width: 930px;
+    height: 470px;
+    margin-bottom: 20px;
+  }
+  .care-card-bg__img {
+    object-fit: cover;
+  }
+  .choose-button {
+    margin: 80px auto 150px;
+  }
+  .care-animals__pic {
+    width: 100%;
+  }
+  .care-animals__img {
+    width: 100%;
+  }
+}
+
+@include media-tablet {
+  .care-animals__wrapper {
+    padding: 80px 0 100px;
+  }
+  .care-card-bg {
+    display: none;
+  }
+  .care-animals__heading {
+    margin-bottom: 30px;
+  }
+  .care-animals__subheading {
+    margin-bottom: 70px;
+  }
+  .choose-button {
+    margin: 50px auto 100px;
+  }
 }

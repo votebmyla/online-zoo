@@ -46,6 +46,18 @@
   width: 1040px;
 }
 
+.live-cams-slide {
+  position: relative;
+}
+
+.live-cams-slide iframe {
+  border-radius: 5px;
+}
+
+.live-cams-slide_current iframe {
+  border: 3px solid $color-primary;
+}
+
 .more-live-views__heading {
   margin-bottom: 30px;
 }

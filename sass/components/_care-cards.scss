@@ -36,3 +36,77 @@
   position: absolute;
   bottom: 50px;
 }
+
+.care-card-disc-wrapper {
+  width: 92px;
+  margin: 50px auto;
+  display: none;
+  justify-content: space-between;
+}
+
+.care-card-disc {
+  width: 8px;
+  height: 8px;
+  border: 1px solid $color-secondary;
+
+  border-radius: 50%;
+  &_current {
+    background-color: $color-secondary;
+  }
+}
+
+@include media-laptop {
+  .care-card {
+    width: 455px;
+    height: 641px;
+    margin-bottom: 20px;
+  }
+  .care-card-bg__img {
+    width: 930px;
+    height: 470px;
+  }
+  .care-card__img {
+    width: 455px;
+  }
+}
+
+@include media-tablet {
+  .care-card__container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 600px;
+    overflow: hidden;
+  }
+  .care-card {
+    flex-direction: row;
+    width: 600px;
+    height: 297px;
+    margin-bottom: 0;
+  }
+  .care-card__pic {
+    flex-basis: 50%;
+    height: 297px;
+  }
+  .care-card__img {
+    width: 300px;
+    height: 297px;
+    object-fit: cover;
+    border-radius: 5px 0 0 5px;
+  }
+  .care-card__text {
+    flex-basis: 50%;
+    padding: 0 20px;
+    margin-top: 0;
+  }
+  .care-card__button {
+    bottom: 35px;
+    right: 75px;
+  }
+  .care-animals__heading {
+    width: auto;
+  }
+  .care-card-disc-wrapper {
+    display: flex;
+  }
+}

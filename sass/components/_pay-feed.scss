@@ -1,5 +1,8 @@
 .pay-feed {
   background-color: $color-secondary;
+}
+
+.pay-feed__wrapper {
   padding: 90px 0 100px;
 }
 
@@ -73,4 +76,74 @@
 
 .pay-feed-button-wrapper {
   padding-left: 20px;
+}
+
+@include media-laptop {
+  .pay-feed__wrapper {
+    padding: 150px 40px 100px;
+  }
+  .pay-feed__heading {
+    margin-bottom: 100px;
+  }
+  .pay-feed-desc__divider {
+    margin: 80px 0 62px;
+  }
+  .pay-feed-detail__img {
+    width: 550px;
+  }
+  .pay-feed-detail {
+    display: flex;
+    align-items: center;
+  }
+  .pay-feed-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pay-feed-title__title,
+  .pay-feed-title__text {
+    width: 550px;
+    text-align: center;
+  }
+  .pay-feed-title__title {
+    margin-bottom: 30px;
+  }
+  .pay-feed__content {
+    margin-bottom: 100px;
+  }
+  .pay-feed-button-container {
+    margin-top: 0px;
+  }
+}
+
+@include media-tablet {
+  .pay-feed__wrapper {
+    padding: 80px 0px;
+  }
+  .pay-feed__heading {
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+  .pay-feed-desc__divider {
+    margin: 50px 0;
+    padding: 0 20px;
+  }
+  .pay-feed-detail {
+    flex-direction: column;
+  }
+  .pay-feed-title {
+    padding: 0 20px;
+    margin-top: 50px;
+  }
+  .pay-feed-button-container {
+    flex-direction: column;
+  }
+  .pay-feed__content {
+    margin-bottom: 50px;
+  }
+  .pay-feed-button-wrapper {
+    padding: 0 20px;
+    margin: 0 auto;
+  }
 }

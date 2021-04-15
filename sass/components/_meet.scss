@@ -2,6 +2,7 @@
   overflow: hidden;
   max-width: 1920px;
   margin: 0 auto;
+  overflow: hidden;
 }
 .meet__wrapper {
   padding: 136px 0 150px;
@@ -28,4 +29,33 @@
 .meet-button {
   display: flex;
   justify-content: center;
+}
+
+@include media-laptop {
+  .meet__wrapper {
+    padding: 100px 0 150px 40px;
+  }
+  .meet__heading {
+    margin-bottom: 30px;
+  }
+  .meet-slider {
+    margin-bottom: 50px;
+  }
+}
+
+@include media-tablet {
+  .meet__wrapper {
+    padding: 100px 20px;
+  }
+  .meet__heading {
+    width: 400px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .meet__subheading {
+    margin-bottom: 50px;
+  }
+  .meet-slider {
+    width: 1220px;
+  }
 }

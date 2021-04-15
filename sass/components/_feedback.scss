@@ -42,3 +42,37 @@
   line-height: 2.2rem;
   text-transform: uppercase;
 }
+
+@include media-tablet {
+  .feedback {
+    width: 523px;
+    height: 371px;
+    padding: 50px 20px;
+    position: relative;
+  }
+  .feedback__icon {
+    position: absolute;
+    width: 60px;
+    height: 46px;
+    fill: $color-alternative;
+    margin-bottom: 30px;
+  }
+  .feedback__title {
+    width: 289px;
+    height: 70px;
+    margin: 0 auto 30px;
+    text-align: center;
+    max-height: 70px;
+  }
+
+  .feedback__text {
+    text-align: center;
+  }
+  .feedback__author {
+    text-align: center;
+  }
+
+  .feedback-wrapper_second {
+    display: none;
+  }
+}
