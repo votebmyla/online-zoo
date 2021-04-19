@@ -147,3 +147,27 @@
     margin: 0 auto;
   }
 }
+
+@include media-mobile {
+  .pay-feed__wrapper {
+    padding: 20px 0px 50px;
+  }
+  .pay-feed-desc__divider {
+    margin-bottom: 30px;
+    padding-left: 10px;
+  }
+  .pay-feed-detail__img {
+    width: 100%;
+  }
+  .pay-feed-title {
+    margin-top: 30px;
+  }
+  .pay-feed-title__title,
+  .pay-feed-title__text {
+    width: 100%;
+  }
+  .pay-feed-button-wrapper {
+    padding: 0 10px;
+    margin: 0;
+  }
+}

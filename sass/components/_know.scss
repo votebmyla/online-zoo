@@ -82,3 +82,76 @@
   line-height: 150%;
   max-width: 1160px;
 }
+
+@include media-laptop {
+  .know {
+    padding: 100px 40px;
+  }
+  .did-you-know {
+    max-width: 930px;
+  }
+}
+
+@include media-tablet {
+  .know {
+    padding: 80px 20px 100px;
+  }
+  .layout-2-col {
+    flex-direction: column-reverse;
+  }
+  .did-you-know {
+    padding: 24px 30px;
+  }
+  .animal-info-container {
+    margin: 80px 0 0px;
+  }
+  .animal-info__pic {
+    margin: 0 0 80px 0;
+  }
+  .animal-info__img {
+    width: 100%;
+    height: auto;
+  }
+  .animal-info__details-item {
+    margin-bottom: 25px;
+  }
+}
+
+@include media-mobile {
+  .live-cams-slider {
+    max-width: 300px;
+    overflow: hidden;
+    margin: 0;
+  }
+  .live-cams-slide .bage {
+    display: none;
+  }
+  .live-cams-slide iframe {
+    width: 140px;
+  }
+  .live-cams-slide {
+    margin-right: 20px;
+  }
+  .did-you-know__subheading {
+    font-size: 1.8rem;
+    line-height: 150%;
+  }
+  .animal-info__details-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .animal-info__details-list {
+    justify-content: flex-start;
+    margin-bottom: 50px;
+  }
+  .animal-info__value {
+    padding: 0;
+    margin-top: 5px;
+  }
+  .animal-info__button {
+    position: absolute;
+    left: 21px;
+    bottom: -92px;
+  }
+}

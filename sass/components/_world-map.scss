@@ -8,3 +8,48 @@
   width: 1400px;
   height: 908px;
 }
+
+.world-map-png {
+  width: 1400px;
+  height: 908px;
+  display: none;
+}
+
+@include media-laptop {
+  .world-map {
+    width: 1200px;
+    height: 778px;
+  }
+  .world-map-pic {
+    width: 1200px;
+    height: 778px;
+  }
+}
+
+@include media-tablet {
+  .world-map-pic {
+    width: 640px;
+    height: 415px;
+  }
+  .world-map {
+    width: 640px;
+    height: 415px;
+  }
+}
+
+@include media-mobile {
+  .world-map-pic {
+    width: 362px;
+    height: 234px;
+  }
+  .world-map {
+    display: none;
+  }
+  .world-map-png {
+    display: block;
+    position: absolute;
+    right: 20px;
+    width: 362px;
+    height: 234px;
+  }
+}

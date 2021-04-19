@@ -17,6 +17,32 @@
   width: 100%;
 }
 
+.hamburger-menu {
+  display: none;
+}
+
+.stick-container {
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.stick {
+  height: 2.3px;
+  width: 30px;
+  background-color: $color-secondary;
+  position: absolute;
+  &_top {
+    top: 0;
+  }
+  &_middle {
+    top: 15px;
+  }
+  &_bottom {
+    bottom: 0;
+  }
+}
+
 @include media-laptop {
   .header__wrapper {
     padding: 0 100px;
@@ -29,5 +55,8 @@
   }
   .nav-socials {
     display: none;
+  }
+  .hamburger-menu {
+    display: block;
   }
 }

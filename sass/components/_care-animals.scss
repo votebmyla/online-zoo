@@ -39,6 +39,10 @@
   margin: 100px auto 150px;
 }
 
+.care-animals__img {
+  width: 100%;
+}
+
 @include media-laptop {
   .care-animals__wrapper {
     padding: 150px 0 150px;
@@ -93,5 +97,29 @@
   }
   .choose-button {
     margin: 50px auto 100px;
+  }
+}
+
+@include media-mobile {
+  .care-animals__wrapper {
+    padding: 50px 0 80px;
+  }
+  .care-animals__subheading {
+    margin-bottom: 50px;
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 130%;
+  }
+  .care-card-disc-wrapper {
+    width: 92px;
+    margin: 30px auto 50px;
+    display: none;
+    justify-content: space-between;
+  }
+  .choose-button {
+    margin: 0px auto 80px;
   }
 }

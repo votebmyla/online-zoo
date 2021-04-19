@@ -101,8 +101,14 @@
   .quick-donate__wrapper {
     padding: 50px 100px;
   }
+  .quick-donate-zoos__wrapper {
+    padding: 30px 40px;
+  }
   .quick-donate__title {
     max-width: 576px;
+  }
+  .quick-donate-zoos__wrapper .quick-donate__title {
+    max-width: 707px;
   }
 }
 
@@ -132,5 +138,36 @@
   }
   .quick-donate__input {
     width: 226px;
+  }
+}
+
+@include media-mobile {
+  .quick-donate__wrapper {
+    padding: 30px 10px 40px;
+  }
+  .quick-donate__input-container {
+    width: auto;
+    height: auto;
+  }
+  .quick-donate__input-wrapper {
+    padding-left: 36px;
+    justify-content: space-between;
+  }
+  .quick-donate__input {
+    width: auto;
+  }
+  .quick-donate__input-presymbol,
+  .quick-donate__input {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+  .quick-donate__input {
+    width: 180px;
+  }
+  .quick-donate__form {
+    margin: 0;
+  }
+  .quick-donate__input-container .button_320 {
+    width: 59px;
   }
 }

@@ -66,3 +66,64 @@
   position: absolute;
   height: calc(100% - 446px);
 }
+
+.live-cams-button-bottom {
+  display: none;
+}
+
+@include media-laptop {
+  .live-cams__wrapper {
+    padding: 30px 0 100px;
+  }
+  .live-cams-top-container {
+    margin-bottom: 30px;
+  }
+  .live-stream-wrapper {
+    max-width: 1025px;
+    height: auto;
+    margin: 0 0 0 auto;
+  }
+  .more-live-views {
+    margin: 10px 0 0 auto;
+    max-width: 1025px;
+  }
+  .live-cams-slider {
+    width: 1040px;
+  }
+  .live-cams-slider {
+    max-width: 835px;
+  }
+  .live-cams-slide iframe {
+    max-width: 265px;
+  }
+  .live-cams-button .button {
+    height: 56px;
+  }
+}
+
+@include media-tablet {
+  .live-cams-button {
+    display: none;
+  }
+  .live-cams-button-bottom {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+  }
+  .live-cams-top-container > * {
+    flex-basis: 2%;
+  }
+  .live-cams-slider-wrapper .button {
+    display: none;
+  }
+  .live-cams-slider {
+    max-width: 445px;
+  }
+  .live-stream-wrapper iframe {
+    height: 405px;
+  }
+  .live-cams-slide iframe {
+    max-width: 135px;
+    height: 106px;
+  }
+}

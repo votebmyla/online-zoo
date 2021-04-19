@@ -119,6 +119,13 @@ hr {
     font-size: 4rem;
     line-height: 4.9rem;
   }
+
+  .heading_h2,
+.heading_h3 {
+    font-size: 2.6rem;
+    font-weight: 500;
+    line-height: 3.2rem;
+  }
 }
 .header {
   background-color: #f58021;
@@ -139,6 +146,32 @@ hr {
   width: 100%;
 }
 
+.hamburger-menu {
+  display: none;
+}
+
+.stick-container {
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.stick {
+  height: 2.3px;
+  width: 30px;
+  background-color: #20113d;
+  position: absolute;
+}
+.stick_top {
+  top: 0;
+}
+.stick_middle {
+  top: 15px;
+}
+.stick_bottom {
+  bottom: 0;
+}
+
 @media (max-width: 1200px) {
   .header__wrapper {
     padding: 0 100px;
@@ -151,6 +184,10 @@ hr {
 
   .nav-socials {
     display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
   }
 }
 .ico {
@@ -290,8 +327,8 @@ hr {
 }
 
 @media (max-width: 320px) {
-  .button_320x45 {
-    width: 320px;
+  .button_320 {
+    width: 100%;
     height: 45px;
   }
 }
@@ -409,6 +446,7 @@ hr {
 }
 @media (max-width: 320px) {
   .watch__bg {
+    width: 100%;
     height: 685px;
     background-image: url(../assets/images/top-background-320.jpg);
     background-size: contain;
@@ -526,6 +564,15 @@ hr {
     margin-bottom: 50px;
   }
 }
+@media (max-width: 320px) {
+  .welcome__wrapper {
+    padding: 50px 0 0;
+  }
+
+  .welcome-content__pic {
+    height: auto;
+  }
+}
 .quick-donate {
   background-color: #20113d;
   padding: 50px 0;
@@ -630,8 +677,16 @@ hr {
     padding: 50px 100px;
   }
 
+  .quick-donate-zoos__wrapper {
+    padding: 30px 40px;
+  }
+
   .quick-donate__title {
     max-width: 576px;
+  }
+
+  .quick-donate-zoos__wrapper .quick-donate__title {
+    max-width: 707px;
   }
 }
 @media (max-width: 640px) {
@@ -664,6 +719,43 @@ hr {
 
   .quick-donate__input {
     width: 226px;
+  }
+}
+@media (max-width: 320px) {
+  .quick-donate__wrapper {
+    padding: 30px 10px 40px;
+  }
+
+  .quick-donate__input-container {
+    width: auto;
+    height: auto;
+  }
+
+  .quick-donate__input-wrapper {
+    padding-left: 36px;
+    justify-content: space-between;
+  }
+
+  .quick-donate__input {
+    width: auto;
+  }
+
+  .quick-donate__input-presymbol,
+.quick-donate__input {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+
+  .quick-donate__input {
+    width: 180px;
+  }
+
+  .quick-donate__form {
+    margin: 0;
+  }
+
+  .quick-donate__input-container .button_320 {
+    width: 59px;
   }
 }
 .meet {
@@ -730,6 +822,32 @@ hr {
 
   .meet-slider {
     width: 1220px;
+  }
+}
+@media (max-width: 320px) {
+  .meet__wrapper {
+    padding: 50px 5px 64px;
+  }
+
+  .meet__heading {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .meet__subheading {
+    font-size: 1.8rem;
+    line-height: 150%;
+    margin-bottom: 30px;
+  }
+
+  .meet-slider {
+    width: 290px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  .meet-button {
+    display: none;
   }
 }
 .slider__slides {
@@ -1031,6 +1149,34 @@ hr {
     margin: 0 auto;
   }
 }
+@media (max-width: 320px) {
+  .pay-feed__wrapper {
+    padding: 20px 0px 50px;
+  }
+
+  .pay-feed-desc__divider {
+    margin-bottom: 30px;
+    padding-left: 10px;
+  }
+
+  .pay-feed-detail__img {
+    width: 100%;
+  }
+
+  .pay-feed-title {
+    margin-top: 30px;
+  }
+
+  .pay-feed-title__title,
+.pay-feed-title__text {
+    width: 100%;
+  }
+
+  .pay-feed-button-wrapper {
+    padding: 0 10px;
+    margin: 0;
+  }
+}
 .our-users {
   background-image: url(../assets/images/user-think-bg.jpg);
   background-repeat: no-repeat;
@@ -1077,6 +1223,23 @@ hr {
 }
 .our-users__feedback:last-child {
   margin-right: 0;
+}
+
+.feedback-disc-wrapper {
+  width: 92px;
+  margin: 30px auto 50px;
+  display: none;
+  justify-content: space-between;
+}
+
+.feedback-disc {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+}
+.feedback-disc_current {
+  background-color: #ffffff;
 }
 
 .feedback-button-container {
@@ -1148,6 +1311,36 @@ hr {
 
   .leave-feedback-button {
     margin: 50px auto 752px 20px;
+  }
+}
+@media (max-width: 320px) {
+  .our-users__wrapper {
+    padding: 40px 10px 0;
+  }
+
+  .our-users__title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .our-users__heading {
+    width: 100%;
+  }
+
+  .our-users__subheading {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 130%;
+    margin-bottom: 46px;
+  }
+
+  .leave-feedback-button {
+    margin: 0 auto 450px;
+    padding: 0 10px;
+  }
+
+  .feedback-disc-wrapper {
+    display: flex;
   }
 }
 .feedback {
@@ -1231,6 +1424,32 @@ hr {
     display: none;
   }
 }
+@media (max-width: 320px) {
+  .feedback {
+    width: 100%;
+    height: 549px;
+    padding: 115px 20px 130px;
+    position: relative;
+  }
+
+  .feedback-wrapper {
+    width: 100%;
+  }
+
+  .feedback__icon {
+    left: 40px;
+    top: 40px;
+  }
+
+  .feedback__title {
+    width: 250px;
+    margin: 0 auto 20px;
+  }
+
+  .feedback__text {
+    max-height: 216px;
+  }
+}
 .care-animals__wrapper {
   padding: 136px 0 150px;
 }
@@ -1270,6 +1489,10 @@ hr {
 
 .choose-button {
   margin: 100px auto 150px;
+}
+
+.care-animals__img {
+  width: 100%;
 }
 
 @media (max-width: 1200px) {
@@ -1337,6 +1560,32 @@ hr {
 
   .choose-button {
     margin: 50px auto 100px;
+  }
+}
+@media (max-width: 320px) {
+  .care-animals__wrapper {
+    padding: 50px 0 80px;
+  }
+
+  .care-animals__subheading {
+    margin-bottom: 50px;
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 130%;
+  }
+
+  .care-card-disc-wrapper {
+    width: 92px;
+    margin: 30px auto 50px;
+    display: none;
+    justify-content: space-between;
+  }
+
+  .choose-button {
+    margin: 0px auto 80px;
   }
 }
 .care-card-bg__img {
@@ -1458,6 +1707,33 @@ hr {
     display: flex;
   }
 }
+@media (max-width: 320px) {
+  .care-card__container {
+    width: 300px;
+  }
+
+  .care-card {
+    flex-direction: column;
+    width: 300px;
+    height: 570px;
+    margin-bottom: 0;
+  }
+
+  .care-card__img {
+    width: 300px;
+    height: 395px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .care-card__button {
+    bottom: 20px;
+  }
+
+  .care-card__pic {
+    height: auto;
+  }
+}
 .footer {
   background-color: #20113d;
   padding: 70px 0 36px;
@@ -1575,6 +1851,44 @@ hr {
     margin-bottom: 30px;
   }
 }
+@media (max-width: 320px) {
+  .footer {
+    padding: 50px 10px;
+  }
+
+  .logo-nav-button-container {
+    width: auto;
+    padding: 0;
+  }
+
+  .logo-list {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 210px;
+    margin-bottom: 30px;
+  }
+
+  .footer__navigation .navigation__list {
+    width: 300px;
+    margin-bottom: 30px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2rem;
+  }
+
+  .copyright-socials-container {
+    padding: 0;
+  }
+
+  .copyright {
+    flex-direction: column;
+    align-items: center;
+    height: 140px;
+    width: auto;
+  }
+}
 .zoos-body {
   position: relative;
 }
@@ -1644,6 +1958,78 @@ hr {
   height: calc(100% - 446px);
 }
 
+.live-cams-button-bottom {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .live-cams__wrapper {
+    padding: 30px 0 100px;
+  }
+
+  .live-cams-top-container {
+    margin-bottom: 30px;
+  }
+
+  .live-stream-wrapper {
+    max-width: 1025px;
+    height: auto;
+    margin: 0 0 0 auto;
+  }
+
+  .more-live-views {
+    margin: 10px 0 0 auto;
+    max-width: 1025px;
+  }
+
+  .live-cams-slider {
+    width: 1040px;
+  }
+
+  .live-cams-slider {
+    max-width: 835px;
+  }
+
+  .live-cams-slide iframe {
+    max-width: 265px;
+  }
+
+  .live-cams-button .button {
+    height: 56px;
+  }
+}
+@media (max-width: 640px) {
+  .live-cams-button {
+    display: none;
+  }
+
+  .live-cams-button-bottom {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+  }
+
+  .live-cams-top-container > * {
+    flex-basis: 2%;
+  }
+
+  .live-cams-slider-wrapper .button {
+    display: none;
+  }
+
+  .live-cams-slider {
+    max-width: 445px;
+  }
+
+  .live-stream-wrapper iframe {
+    height: 405px;
+  }
+
+  .live-cams-slide iframe {
+    max-width: 135px;
+    height: 106px;
+  }
+}
 .know {
   padding: 150px 0;
 }
@@ -1731,6 +2117,91 @@ hr {
   max-width: 1160px;
 }
 
+@media (max-width: 1200px) {
+  .know {
+    padding: 100px 40px;
+  }
+
+  .did-you-know {
+    max-width: 930px;
+  }
+}
+@media (max-width: 640px) {
+  .know {
+    padding: 80px 20px 100px;
+  }
+
+  .layout-2-col {
+    flex-direction: column-reverse;
+  }
+
+  .did-you-know {
+    padding: 24px 30px;
+  }
+
+  .animal-info-container {
+    margin: 80px 0 0px;
+  }
+
+  .animal-info__pic {
+    margin: 0 0 80px 0;
+  }
+
+  .animal-info__img {
+    width: 100%;
+    height: auto;
+  }
+
+  .animal-info__details-item {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 320px) {
+  .live-cams-slider {
+    max-width: 300px;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  .live-cams-slide .bage {
+    display: none;
+  }
+
+  .live-cams-slide iframe {
+    width: 140px;
+  }
+
+  .live-cams-slide {
+    margin-right: 20px;
+  }
+
+  .did-you-know__subheading {
+    font-size: 1.8rem;
+    line-height: 150%;
+  }
+
+  .animal-info__details-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .animal-info__details-list {
+    justify-content: flex-start;
+    margin-bottom: 50px;
+  }
+
+  .animal-info__value {
+    padding: 0;
+    margin-top: 5px;
+  }
+
+  .animal-info__button {
+    position: absolute;
+    left: 21px;
+    bottom: -92px;
+  }
+}
 .sidebar {
   position: sticky;
   transition: all 0.2s ease-in-out;
@@ -1904,6 +2375,96 @@ hr {
   position: absolute;
 }
 
+@media (max-width: 1200px) {
+  .sidebar-zoos_closed {
+    width: 115px;
+  }
+
+  .sidebar-zoos_closed .sidebar__top_zoos {
+    justify-content: center;
+  }
+
+  .sidebar-zoos_closed .circle {
+    display: none;
+  }
+
+  .sidebar-zoos_closed .sidebar-animal_current.sidebar-animal_panda {
+    fill: #ffffff;
+  }
+  .sidebar-zoos_closed .sidebar-animal_current.sidebar-animal_eagle {
+    fill: #ffffff;
+  }
+  .sidebar-zoos_closed .sidebar-animal_current.sidebar-animal_gorilla {
+    fill: #ffffff;
+  }
+  .sidebar-zoos_closed .sidebar-animal_current.sidebar-animal_lemur {
+    fill: #ffffff;
+  }
+
+  .sidebar-zoos_closed .sidebar-animal_panda {
+    fill: #f58021;
+  }
+  .sidebar-zoos_closed .sidebar-animal_eagle {
+    fill: #f58021;
+  }
+  .sidebar-zoos_closed .sidebar-animal_gorilla {
+    fill: #f58021;
+  }
+  .sidebar-zoos_closed .sidebar-animal_lemur {
+    fill: #f58021;
+  }
+}
+@media (max-width: 640px) {
+  .sticky-container {
+    height: 929px;
+  }
+
+  .sidebar-zoos_closed {
+    width: 78px;
+  }
+
+  .sidebar-zoos {
+    height: auto;
+  }
+
+  .sidebar-zoos_closed .sidebar-animal_current.sidebar-animal_panda {
+    width: 40px;
+    fill: #ffffff;
+  }
+  .sidebar-zoos_closed .sidebar-animal_current.sidebar-animal_eagle {
+    width: 40px;
+    fill: #ffffff;
+  }
+  .sidebar-zoos_closed .sidebar-animal_current.sidebar-animal_gorilla {
+    width: 40px;
+    fill: #ffffff;
+  }
+  .sidebar-zoos_closed .sidebar-animal_current.sidebar-animal_lemur {
+    width: 40px;
+    fill: #ffffff;
+  }
+
+  .sidebar-zoos_closed .sidebar-animal_panda {
+    width: 40px;
+    fill: #f58021;
+  }
+  .sidebar-zoos_closed .sidebar-animal_eagle {
+    width: 40px;
+    fill: #f58021;
+  }
+  .sidebar-zoos_closed .sidebar-animal_gorilla {
+    width: 40px;
+    fill: #f58021;
+  }
+  .sidebar-zoos_closed .sidebar-animal_lemur {
+    width: 40px;
+    fill: #f58021;
+  }
+
+  .sidebar-animals {
+    height: 100px;
+  }
+}
 .bage {
   border-radius: 0 0 5px 0;
   position: absolute;
@@ -1946,6 +2507,11 @@ hr {
   height: 20px;
 }
 
+@media (max-width: 1200px) {
+  .bage_sidebar-zoos {
+    display: none;
+  }
+}
 .map {
   padding: 40px 0 150px;
 }
@@ -1957,6 +2523,48 @@ hr {
   margin-bottom: 70px;
 }
 
+@media (max-width: 1200px) {
+  .map {
+    padding: 30px 0 100px;
+  }
+
+  .map__heading {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 640px) {
+  .map__heading {
+    font-size: 4.2rem;
+    font-weight: 500;
+    line-height: 5.1rem;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 320px) {
+  .map {
+    padding: 30px 0 50px;
+  }
+
+  .map__heading {
+    font-size: 4.2rem;
+    font-weight: 500;
+    line-height: 5.1rem;
+    margin-bottom: 50px;
+  }
+
+  .map__heading {
+    font-size: 2.6rem;
+    font-weight: 500;
+    line-height: 130%;
+    text-transform: lowercase;
+    margin-bottom: 30px;
+    width: auto;
+  }
+
+  .map__wrapper {
+    overflow: hidden;
+  }
+}
 .world-map-pic {
   position: relative;
   width: 1400px;
@@ -1968,6 +2576,52 @@ hr {
   height: 908px;
 }
 
+.world-map-png {
+  width: 1400px;
+  height: 908px;
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .world-map {
+    width: 1200px;
+    height: 778px;
+  }
+
+  .world-map-pic {
+    width: 1200px;
+    height: 778px;
+  }
+}
+@media (max-width: 640px) {
+  .world-map-pic {
+    width: 640px;
+    height: 415px;
+  }
+
+  .world-map {
+    width: 640px;
+    height: 415px;
+  }
+}
+@media (max-width: 320px) {
+  .world-map-pic {
+    width: 362px;
+    height: 234px;
+  }
+
+  .world-map {
+    display: none;
+  }
+
+  .world-map-png {
+    display: block;
+    position: absolute;
+    right: 20px;
+    width: 362px;
+    height: 234px;
+  }
+}
 .animal-location {
   position: absolute;
   transform: translate(-53px, -145px);
@@ -2080,6 +2734,165 @@ hr {
   top: 32px;
 }
 
+@media (max-width: 640px) {
+  .animal-location {
+    transform: translate(-25px, -68px);
+  }
+
+  .tag {
+    width: 50px;
+    height: 71px;
+  }
+
+  .animal-icon {
+    position: absolute;
+    fill: #20113d;
+  }
+  .animal-icon_eagle {
+    width: 25.8px;
+    height: 24px;
+    left: 12px;
+    top: 16px;
+  }
+  .animal-icon_alligator {
+    width: 27.8px;
+    height: 22.6px;
+    left: 10.8px;
+    top: 15px;
+  }
+  .animal-icon_lion {
+    width: 25px;
+    height: 22.1px;
+    left: 10.8px;
+    top: 15px;
+  }
+  .animal-icon_panda {
+    width: 32px;
+    height: 23.6px;
+    left: 9px;
+    top: 12.2px;
+  }
+  .animal-icon_gorilla {
+    width: 27.3px;
+    height: 23.6px;
+    left: 10.8px;
+    top: 12.7px;
+  }
+  .animal-icon_tiger {
+    width: 30.2px;
+    height: 25.5px;
+    left: 10.3px;
+    top: 13.2px;
+  }
+  .animal-icon_lemur {
+    width: 14.15px;
+    height: 24px;
+    left: 18.4px;
+    top: 15px;
+  }
+  .animal-icon_koala {
+    width: 20.7px;
+    height: 25.9px;
+    left: 14.6px;
+    top: 15.1px;
+  }
+}
+@media (max-width: 320px) {
+  .animal-location {
+    position: absolute;
+    transform: translate(-49px, -135px);
+  }
+  .animal-location_eagle {
+    top: 93.25%;
+    left: 17.28%;
+  }
+  .animal-location_alligator {
+    top: 92.99%;
+    left: 26.11%;
+  }
+  .animal-location_lion {
+    top: 98.14%;
+    left: 46.38%;
+  }
+  .animal-location_panda {
+    top: 86.85%;
+    left: 73.12%;
+  }
+  .animal-location_gorilla {
+    top: 100.66%;
+    left: 54.63%;
+  }
+  .animal-location_tiger {
+    top: 103.51%;
+    left: 77.46%;
+  }
+  .animal-location_lemur {
+    top: 113.82%;
+    left: 61.88%;
+  }
+  .animal-location_koala {
+    top: 116.56%;
+    left: 86.92%;
+  }
+
+  .tag {
+    width: 42px;
+    height: 60px;
+  }
+
+  .animal-icon {
+    position: absolute;
+    fill: #20113d;
+  }
+  .animal-icon_eagle {
+    width: 25.8px;
+    height: 24px;
+    left: 8px;
+    top: 12px;
+  }
+  .animal-icon_alligator {
+    width: 27.8px;
+    height: 22.6px;
+    left: 7.8px;
+    top: 11px;
+  }
+  .animal-icon_lion {
+    width: 25px;
+    height: 22.1px;
+    left: 7.8px;
+    top: 11px;
+  }
+  .animal-icon_panda {
+    width: 30px;
+    height: 21.6px;
+    left: 6px;
+    top: 8.2px;
+  }
+  .animal-icon_gorilla {
+    width: 27.3px;
+    height: 23.6px;
+    left: 6.8px;
+    top: 8.7px;
+  }
+  .animal-icon_tiger {
+    width: 30.2px;
+    height: 25.5px;
+    left: 6.3px;
+    top: 9.2px;
+  }
+  .animal-icon_lemur {
+    width: 14.15px;
+    height: 24px;
+    left: 14.4px;
+    top: 11px;
+  }
+  .animal-icon_koala {
+    width: 20.7px;
+    height: 25.9px;
+    left: 10.6px;
+    top: 11.1px;
+  }
+}
 .in-touch-content {
   padding: 150px 0;
 }
@@ -2143,6 +2956,67 @@ hr {
   margin-top: 67px;
 }
 
+@media (max-width: 1200px) {
+  .contact-us-img {
+    width: 100%;
+  }
+
+  .in-touch-content {
+    padding: 50px 0 100px;
+    flex-direction: column;
+  }
+
+  .in-touch__heading {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .in-touch__text {
+    width: auto;
+    max-width: 835px;
+    text-align: center;
+    margin: 0 auto 50px;
+  }
+
+  .in-touch__form-container {
+    max-width: 740px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .in-touch__button {
+    margin-top: 50px;
+    align-self: center;
+  }
+
+  .in-touch__textarea {
+    margin: 0;
+  }
+}
+@media (max-width: 640px) {
+  .in-touch-content {
+    padding: 30px 0 80px;
+  }
+
+  .in- .in-touch__heading,
+.in-touch__text {
+    padding: 0 20px;
+  }
+
+  .in-touch__form-container {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 320px) {
+  .in-touch__heading,
+.in-touch__text {
+    padding: 0 10px;
+  }
+
+  .in-touch__form-container {
+    padding: 0 10px;
+  }
+}
 .error-404 {
   background-image: url(../assets/images/404-bg.jpg);
   background-repeat: no-repeat;

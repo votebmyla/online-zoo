@@ -60,3 +60,59 @@
 .in-touch__button {
   margin-top: 67px;
 }
+
+@include media-laptop {
+  .contact-us-img {
+    width: 100%;
+  }
+  .in-touch-content {
+    padding: 50px 0 100px;
+    flex-direction: column;
+  }
+  .in-touch__heading {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .in-touch__text {
+    width: auto;
+    max-width: 835px;
+    text-align: center;
+    margin: 0 auto 50px;
+  }
+  .in-touch__form-container {
+    max-width: 740px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .in-touch__button {
+    margin-top: 50px;
+    align-self: center;
+  }
+  .in-touch__textarea {
+    margin: 0;
+  }
+}
+
+@include media-tablet {
+  .in-touch-content {
+    padding: 30px 0 80px;
+  }
+  .in- .in-touch__heading,
+  .in-touch__text {
+    padding: 0 20px;
+  }
+  .in-touch__form-container {
+    padding: 0 20px;
+  }
+}
+
+@include media-mobile {
+  .in-touch__heading,
+  .in-touch__text {
+    padding: 0 10px;
+  }
+  .in-touch__form-container {
+    padding: 0 10px;
+  }
+}

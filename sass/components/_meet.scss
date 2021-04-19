@@ -59,3 +59,26 @@
     width: 1220px;
   }
 }
+
+@include media-mobile {
+  .meet__wrapper {
+    padding: 50px 5px 64px;
+  }
+  .meet__heading {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .meet__subheading {
+    font-size: 1.8rem;
+    line-height: 150%;
+    margin-bottom: 30px;
+  }
+  .meet-slider {
+    width: 290px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  .meet-button {
+    display: none;
+  }
+}

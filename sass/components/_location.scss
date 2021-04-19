@@ -1,6 +1,7 @@
 .animal-location {
   position: absolute;
   transform: translate(-53px, -145px);
+
   &_eagle {
     top: 59.25%;
     left: 15.28%;
@@ -107,5 +108,166 @@
     height: 55px;
     left: 31px;
     top: 32px;
+  }
+}
+
+@include media-tablet {
+  .animal-location {
+    transform: translate(-25px, -68px);
+  }
+  .tag {
+    width: 50px;
+    height: 71px;
+  }
+
+  .animal-icon {
+    position: absolute;
+    fill: $color-secondary;
+    &_eagle {
+      width: 25.8px;
+      height: 24px;
+      left: 12px;
+      top: 16px;
+    }
+    &_alligator {
+      width: 27.8px;
+      height: 22.6px;
+      left: 10.8px;
+      top: 15px;
+    }
+    &_lion {
+      width: 25px;
+      height: 22.1px;
+      left: 10.8px;
+      top: 15px;
+    }
+    &_panda {
+      width: 32px;
+      height: 23.6px;
+      left: 9px;
+      top: 12.2px;
+    }
+    &_gorilla {
+      width: 27.3px;
+      height: 23.6px;
+      left: 10.8px;
+      top: 12.7px;
+    }
+    &_tiger {
+      width: 30.2px;
+      height: 25.5px;
+      left: 10.3px;
+      top: 13.2px;
+    }
+    &_lemur {
+      width: 14.15px;
+      height: 24px;
+      left: 18.4px;
+      top: 15px;
+    }
+    &_koala {
+      width: 20.7px;
+      height: 25.9px;
+      left: 14.6px;
+      top: 15.1px;
+    }
+  }
+}
+
+@include media-mobile {
+  .animal-location {
+    position: absolute;
+    transform: translate(-49px, -135px);
+
+    &_eagle {
+      top: 93.25%;
+      left: 17.28%;
+    }
+    &_alligator {
+      top: 92.99%;
+      left: 26.11%;
+    }
+    &_lion {
+      top: 98.14%;
+      left: 46.38%;
+    }
+    &_panda {
+      top: 86.85%;
+      left: 73.12%;
+    }
+    &_gorilla {
+      top: 100.66%;
+      left: 54.63%;
+    }
+    &_tiger {
+      top: 103.51%;
+      left: 77.46%;
+    }
+    &_lemur {
+      top: 113.82%;
+      left: 61.88%;
+    }
+    &_koala {
+      top: 116.56%;
+      left: 86.92%;
+    }
+  }
+  .tag {
+    width: 42px;
+    height: 60px;
+  }
+
+  .animal-icon {
+    position: absolute;
+    fill: $color-secondary;
+
+    &_eagle {
+      width: 25.8px;
+      height: 24px;
+      left: 8px;
+      top: 12px;
+    }
+    &_alligator {
+      width: 27.8px;
+      height: 22.6px;
+      left: 7.8px;
+      top: 11px;
+    }
+    &_lion {
+      width: 25px;
+      height: 22.1px;
+      left: 7.8px;
+      top: 11px;
+    }
+    &_panda {
+      width: 30px;
+      height: 21.6px;
+      left: 6px;
+      top: 8.2px;
+    }
+    &_gorilla {
+      width: 27.3px;
+      height: 23.6px;
+      left: 6.8px;
+      top: 8.7px;
+    }
+    &_tiger {
+      width: 30.2px;
+      height: 25.5px;
+      left: 6.3px;
+      top: 9.2px;
+    }
+    &_lemur {
+      width: 14.15px;
+      height: 24px;
+      left: 14.4px;
+      top: 11px;
+    }
+    &_koala {
+      width: 20.7px;
+      height: 25.9px;
+      left: 10.6px;
+      top: 11.1px;
+    }
   }
 }

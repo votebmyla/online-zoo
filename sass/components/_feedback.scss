@@ -76,3 +76,26 @@
     display: none;
   }
 }
+
+@include media-mobile {
+  .feedback {
+    width: 100%;
+    height: 549px;
+    padding: 115px 20px 130px;
+    position: relative;
+  }
+  .feedback-wrapper {
+    width: 100%;
+  }
+  .feedback__icon {
+    left: 40px;
+    top: 40px;
+  }
+  .feedback__title {
+    width: 250px;
+    margin: 0 auto 20px;
+  }
+  .feedback__text {
+    max-height: 216px;
+  }
+}

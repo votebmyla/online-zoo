@@ -8,3 +8,44 @@
   text-align: center;
   margin-bottom: 70px;
 }
+
+@include media-laptop {
+  .map {
+    padding: 30px 0 100px;
+  }
+  .map__heading {
+    margin-bottom: 30px;
+  }
+}
+
+@include media-tablet {
+  .map__heading {
+    font-size: 4.2rem;
+    font-weight: 500;
+    line-height: 5.1rem;
+    margin-bottom: 50px;
+  }
+}
+
+@include media-mobile {
+  .map {
+    padding: 30px 0 50px;
+  }
+  .map__heading {
+    font-size: 4.2rem;
+    font-weight: 500;
+    line-height: 5.1rem;
+    margin-bottom: 50px;
+  }
+  .map__heading {
+    font-size: 2.6rem;
+    font-weight: 500;
+    line-height: 130%;
+    text-transform: lowercase;
+    margin-bottom: 30px;
+    width: auto;
+  }
+  .map__wrapper {
+    overflow: hidden;
+  }
+}

@@ -81,3 +81,12 @@
     margin-bottom: 50px;
   }
 }
+
+@include media-mobile {
+  .welcome__wrapper {
+    padding: 50px 0 0;
+  }
+  .welcome-content__pic {
+    height: auto;
+  }
+}
