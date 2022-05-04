@@ -1,3 +1,3 @@
 # online-zoo
-online-zoo project
+online-zoo project \
 https://votebmyla.github.io/online-zoo/
